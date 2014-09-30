@@ -1,0 +1,7 @@
+#plugins-list li {
+	float: left;
+	width: 10em;
+}
+#plugins-plugins {
+	height: 4em;
+}

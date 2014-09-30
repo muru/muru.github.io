@@ -1,0 +1,28 @@
+
+td, th {
+border: solid black;
+padding: 0.5em 0.9em;
+width: 10em;
+}
+
+.courses.slot-2 span.course {
+    /* display: inline; */
+	/* display: none; */
+    float: left;
+    z-index: 99999999;
+}
+div {
+    height: 2em;
+    overflow: visible;
+    display: inline-block;
+}
+.courses.slot-3, .courses.slot-4, .courses.slot-2, .courses.slot-5, .courses.slot-6, .courses.slot-7, .courses.slot-8, .courses.slot-9, .courses.slot-10, .courses.slot-11, .courses.slot-12, .courses.slot-13, .courses.slot-14, .courses.slot-2 {
+    display: none;
+}
+.course-code {
+    display: block;
+}
+.course-instructors {
+    display: block;
+    color: #0FD;
+}

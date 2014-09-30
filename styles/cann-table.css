@@ -1,0 +1,39 @@
+#cann-table {
+	border: 0.1em solid gray;
+	width: 100%;
+	margin: 0.5em;
+}
+#cann-table th {
+	padding: 0.5em 1em;
+	background-color: #232323;
+	font-size: 0.9em;
+}
+.cann-row-1, .cann-row-2 {
+	border: 0.1em solid gray;
+	width: 30%;
+	padding: 1em;
+	background-color: #343434;
+	color: #0DD;
+	margin: 0;
+	height: 2em;
+	font-size: 0.9em;
+}
+.cann-row-2 {
+	background-color: #121212;
+}
+.cann-point {
+	width: 1em;
+	padding: 0.5em 1em;
+	text-align: center;
+}
+.cann-clubs {
+	padding: 0.5em 1em;
+}
+.club-name {
+	width: 13em;
+	display: inline-block;
+}
+#cann-gen-note {
+	font-size: 0.6em;
+	display: block;
+}
