@@ -140,6 +140,19 @@ ul li {
 	padding: 1em;
 	text-align: left;
 }
+.section li {
+	list-style: none;
+}
+.top {
+	float: right;
+	background: rgb(213, 213, 213);
+	padding: 0.5em;
+	/* vertical-align: top; */
+	border-radius: 0.2em;
+	border: 0.2em solid gray;
+	margin-top: -1em;
+	font-size: 1.5em;
+}
 
 @media screen and (orientation:landscape) {
 	#header h1, #header h2 {
@@ -177,17 +190,6 @@ ul li {
 	#nav li:hover {
 		box-shadow: 0.1em 0.1em 0.15em 0.05em rgba(100,100,100,0.75);
 	}
-
-	.top {
-		float: right;
-		background: rgb(213, 213, 213);
-		padding: 0.5em;
-		/* vertical-align: top; */
-		border-radius: 0.2em;
-		border: 0.2em solid gray;
-		margin-top: -1em;
-		font-size: 1.5em;
-	}
 	#main {
 		max-width: 70%;
 		min-width: 22em;
@@ -223,7 +225,11 @@ ul li {
 	#main, body {
 		text-align: center;
 	}
-	
+	.section {
+		width: 85%;
+		font-size: 2em;
+		margin: 2em auto;
+	}
 }
 
 
