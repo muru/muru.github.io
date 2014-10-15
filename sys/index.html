@@ -24,188 +24,34 @@
 	<ul id="nav">
 		<a href="#accounts"><li> Accounts		</li> </a>
 		<a href="#mail">	<li> Mail			</li> </a>
-		<a href="#infra">	<li> Infrastructure </li> </a>
 		<a href="#net">		<li> Networking		</li> </a>
-		<a href="#polcy">	<li> Policies		</li> </a>
+		<a href="#infra">	<li> Infrastructure </li> </a>
+		<a href="#policy">	<li> Policies		</li> </a>
 		<a href="#other">	<li> Other things	</li> </a>
 	</ul>
 </nav>
 <div id="main">
 	<div id="accounts" class="section"> 
 		<a href=# class="top">↑</a>
-		<li><a name="section1.4"></a>
-		<strong>Q. How do I check my home directory quota usage?</strong><br />
-		Login to any OSL/NSL machine and execute command "quota".<br />
-		<br /><br /></li>
-
-		<li><a name="section1.5"></a>
-		<strong>Q. How do I change my CSE password?</strong><br />
-		Goto <a href="https://www.cse.iitb.ac.in/~swlab/chpass/chpass.php">the Change Password page</a>. 
-		Login with your CSE id and follow the link for Change password<br />
-		<br /><br /></li>
-
-		<li><a name="section1.6"></a>
-		<strong>Q. How do I change my IITB LDAP password?</strong><br />
-		Goto <a href="http://camp.iitb.ac.in/cgi-bin/index.cgi">http://camp.iitb.ac.in/cgi-bin/index.cgi</a>. 
-		Login with LDAP id and follow the link for Change password<br />
-		<br /><br /></li>
-
-
-		<li><a name="section1.7"></a>
-		<strong>Q. Can I change my CSE password, by using "passwd" command?</strong><br />
-		Yes. Logon to NSL/OSL machines or mars and use command "passwd".
-		<br />
-		<br /><br /></li>
-
-
-		<li><a name="section1.8"></a>
-		<strong>Q. I received an email asking for my password. What should I do?</strong><br />
-		Do not reply to such mails. Sysads will never ask for passwords. Do not give passwords in emails.<br />
-		<br /><br /></li>
-
-
+		<!--#include virtual="accounts.html"-->
 	</div>
 	<div id="mail" class="section"> 
 		<a href=# class="top">↑</a>
-
-		<li><a name="section1.12"></a>
-		<strong>Q. How do I configure my thunderbird for CSE account? </strong><br />
-		Go through the steps given in the document 
-		<a href="http://www.cse.iitb.ac.in/~swlab/Thunderbird_CSE.pdf" target="text">Thunderbird Configuration</a><br />
-		<br /><br /></li>
-
-		<li><a name="section1.13"></a>
-		<strong>Q. How do I configure my thunderbird for IT account? </strong><br />
-		Go through the steps given in the document 
-		<a href="http://www.cse.iitb.ac.in/~swlab/Thunderbird_IT.pdf" target="text">Thunderbird Configuration</a><br />
-		<br /><br /></li>
-		<li><a name="section1.2"></a>
-		<strong>Q.How to setup auto-forwarding of cse mail(for faculty)?</strong><br />
-		Create a .forward (pronounced dot-forward) file in
-		your home directory on surya and specify the email address to which you want to forward the mails, on the 1st line.<br />
-		If you want to save a copy of the mail on cse also, you will have to add your cse mail address on the second line in .forward file.<br />
-		<br /><br /></li>
-
-
-		<li><a name="section1.3"></a>
-		<strong>Q. How to setup auto-forwarding of cse mail(for students)?</strong><br />
-		Goto <a href="http://mail.cse.iitb.ac.in/dotforward">http://mail.cse.iitb.ac.in/dotforward</a> and login with CSE id. On the left side menu, click on "Manage Forwarding" and in the box seen, enter the email address.<br />
-		<br /><br /></li>
-
-
-		<li><a name="section1.3.1"></a>
-		<strong>Q. How to setup auto-forwarding and change password of IT mail?</strong><br />
-		Goto <a href="http://ldapbrowse.it.iitb.ac.in">http://ldapbrowse.it.iitb.ac.in</a> and On the left side menu, click on "Manage Forwarding" to auot-forwarding and Click on "Change Password" to change IT password.<br />
-		<br /><br /></li>
-
+		<!--#include virtual="mail.html"-->
 	</div>
 	<div id="infra" class="section"> 
+		<a href=# class="top">↑</a>
+		<!--#include virtual="infra.html"-->
+	</div>
+	<div id="net" class="section"> 
+		<!--#include virtual="net.html"-->
 		<a href=# class="top">↑</a>
 	</div>
 	<div id="policy" class="section"> 
 		<a href=# class="top">↑</a>
-		<div id="content">
-			<div id="primaryContentContainer">
-				<div id="primaryContent">
-					<p> The primary function of the computer facilities is for general usage and course's labs. Students/staff may use the facilities for general use when no course labs are taking place however when course's labs are in progress all general users are expected to vacate the lab. <font color="red">If people are found to be abusing the computers or printers, their access to the computer facilities will be denied and further action will be taken by <a href="http://www.cse.iitb.ac.in/csea/misc2.php">MLC</a></font>.</p>	
-
-
-					<ul>
-						<li><a href="#section1">Entry to s/w lab</a></li>
-						<li><a href="#section2">Key transfer policy</a></li>
-						<li><a href="#section3">Manuals</a></li>
-						<li><a href="#section4">System usage</a></li>
-						<li><a href="#section5">Terminals and PCs</a></li>
-						<li><a href="#section6">News group</a></li>
-						<li><a href="#section7">Mail</a></li>
-						<li><a href="#section8">FTP and other INTERNET resources</a></li>
-						<li><a href="#section9">Unauthorized usage</a></li>
-					</ul>
-					<hr />
-					<a name="section1"></a>	
-					<h3>Entry to s/w lab<span></span></h3>
-					<p>All registered users of the system can enter the lab. Only Research
-					scholars and staff have access to the system area. Do not bring
-					unauthorized people to the lab without permission.
-					Muddy footwear, Umbrellas, raincoats are to be left at the entrance.</p>
-
-					<a name="section2"></a>
-					<h3>Key transfer policy<span></span></h3>
-					<p>The Lab is potentially open 24 hours. Staff will be available only during office hours. So in order to keep the lab open when there are users, a key-transfer policy is in place. There is a key transfer Register kept in s/w lab which gives details of who has opened the lab and who has currently taken over the key etc. (External users are not allowed to take over the keys. External users are students who come to use the lab from other colleges/institutions.) It is very important that this register is to be properly maintained in order to keep the lab open round the clock.<br />
-					The Key transfer policy currently followed is as follows:</p>
-					<ul>
-						<li>Anyone who has taken <b>Key Permission</b> can open the lab
-						by getting keys from the watchman against their valid identity card. (Key permission is obtained by submitting a form to security through s/w lab in-charge and Head of the dept.  Few students recommended by CSEA are allowed to submit the Key permission form)</li>
-
-						<li>The person who opens the lab should enter his name, roll number,
-						time of opening the lab etc in the register kept for this purpose. The Key is to be kept on the wall near the entrance on a nail.</li>
-
-						<li>When he/she wants to leave the lab, he/she can transfer the key to any other user (except external user) who is willing to take over the key and make sure that the person makes an entry in the register.  If there are no users or if no one is willing to take over the key; he/she should lock the lab after putting off the lights and fans and hand over the key to the watchman.Making an entry in key tranfer register at s/w lab indicating the closure of the lab is very important.
-						</li>
-
-						<li>If the lab is not open during office hours, users can request the office staff for getting the keys issued and open the lab. An appropriate entry in the key transfer register is to be made.</li>				
-					</ul>
-
-					<a name="section3"></a>
-					<h3>Manuals<span></span></h3>
-					<p>One copy of all the lab manuals is kept in library and another copy in s/w lab. The manuals in the s/w lab are not issued to any user. They are to be referred in the s/w lab itself. The user who wants to refer the manual must make an entry in the register kept for this purpose and the I card is submitted to the operating staff.</p>
-
-					<h3>System usage<span></span></h3>
-					<p><font color="red">Use the resources only for academic purposes. Do not let anyone else access your account. The user will be held fully responsible for any files in their account, and any abuse/misuse of their account.</font></p>
-					<ul>
-						<li>Do not lend password to anyone.</li>
-						<li>Do not attempt to get other's password by fraud methods (by writing
-						password hacking programs)</li>
-						<li>Check the permissions (must be 700 i.e. read/write/execute by owner) and contents of your rhosts file</li>
-						<li><b>Playing games is strictly prohibited.</b></li>
-						<li><b>Playing songs is not allowed during office hours. Outside office      timings use ear phones or keep low volume, so that others will not get disturbed.</b></li>
-						<li>DO NOT  lock the terminals when going out of the lab for lunch/dinner/classes etc. </li>
-						<li>Do not write programs which triggers infinite number of processes.</li>
-						<li>Whenever you are not sure if anything is allowed please check first (with staff by e-mail (sysadms @ cse.iitb.ac.in), or posting in the cse.systems newsgroup).</li>
-					</ul>
-
-					<a name="section4"></a>
-					<h3>Terminals and PCs<span></span></h3>
-					<ul>
-						<li>Put off the PC's terminals and monitors when not in use.</li> 
-						<li><font color="red">Never restart the machine without consulting sysadms. A strict action will be taken if anybody is found doing so.</font></li>
-					</ul>
-
-					<a name="section5"></a>
-					<h3>Mail<span></span></h3>
-					<ul>
-						<li>Send mail only when necessary.</li>
-						<li>Delete unwanted mails.</li>
-						<li>Do not allow mail files to grow.</li>
-						<li>Do not mail objectionable/non-academic material.</li>
-						<li>Do not masquerade as some other user or send fake mails.</li>
-						<li>Do not try send mails using shell script with infinite loops. A strict action will be taken if anybody is found doing such acts.</li>
-					</ul>
- 
-					<a name="section7"></a>
-					<h3>FTP and other INTERNET resources<span></span></h3>	
-					<p>While some Internet resources are available on the machine, they are meant for limited academic use only. Before you use any of these resources for any special purposes, you must check with software lab staff, or send e-mail to sysadms@cse.iitb.ac.in. Indiscriminate use of this will put heavy load on the network causing problems not only to other users in our department, but also in rest of the campus.</p>
-
-					<a name="section8"></a>
-					<h3>Unauthorized usage<span></span></h3>
-					<ul>
-						<li>Using somebody else's account or lending your login/password to others will draw stringent penalties.</li>
-						<li>Report all malfunction (software/hardware) to S/W staff and make it a point to note it down in the complaints register.</li>
-						<li>Noticing misuse of the lab facilities and not reporting the same will make you accessory to the offense.</li>
-						<li><font color="red">Downloading/distributing  objectionable non-academic material will draw heavy penalties.</font></li>
-						<li><font color="red">Trying to obtain unauthorized access to any part of the computer system is liable to punishment.</font></li>
-						<li><font color="red">Cracking tools found to be owned by any user is enough to impress cracking charges.</font></li>
-						<li>Entry to server room is strictly prohibited.</li>
-					</ul>
-
-
-					<p><b>USERS ARE REQUESTED TO FOLLOW THE GUIDELINES STRICTLY. VIOLATION OF THESE WILL CAUSE LOT OF DIFFICULTY TO MANY PEOPLE AND THIS WILL FORCE THE AUTHORITIES TO TAKE STRINGENT ACTION.</b></p>
-
-				</div>
-			</div>
-		</div>
+		<!--#include virtual="policy.html"-->
 	</div>
-	<div id="contact" class="section"> 
+	<div id="other" class="section"> 
 		<a href=# class="top">↑</a>
 	</div>
 </div>

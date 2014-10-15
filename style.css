@@ -12,6 +12,8 @@
 	padding: 0.1em 3%;
 	margin: 0;
 	font-variant: small-caps;
+	font-size: 2em;
+	text-align: center;
 }
 /** The #main div is given a min-height so that it isn't
   * squished on pages with little content, or for displays
@@ -20,18 +22,14 @@
   * Chrome browser. Didn't work on a Nexus 4 Opera Mini.
   */
 #main {
-	padding: 2% 4%;
-	width: 70%;
+	padding: 1em 2em;
 	min-height: 42em;
-	border-right: 0.2em solid white;
-}
-#sidebar {
-	padding-top: 1%;
-	width: 20%;
-/*	min-height: 42em;*/
+	/*margin-left: 15%;
 	float: right;
-	font-size: 1.5em;
+	display: inline-block;*/
+	margin: 0 auto;
 }
+
 /** To be used when CSE enables SSI.
   * #footer-include {
   *	clear: both;
@@ -51,24 +49,43 @@
 	display: none;
 }
 
+div.bugs {
+	/*list-style: none;*/
+	border: 0.1em gray solid;
+	padding: 0.5em;
+	color: black;
+	background: grey;
+	box-shadow: 0.1em 0.1em 0.2em 0 rgba(128,128,128,0.75);
+	border-radius: 0.3em;
+}
 #header li {
 	list-style: none;
 }
-#sidebar ul {
-	padding: 0;
-	margin: 0;
+#bug a, #query a{
+	color: black;
 }
 #sidebar li {
-	border-bottom: 0.1em solid gray;
-	padding: 0.5em 0;
-	margin-left: 0.5em;
+	margin-bottom: 0.1em;
+	padding: 0.5em 0.5em;
+	border-radius: 0.3em;
+	background-color: #999999;
 }
+
 #sidebar a {
 	text-decoration: none;
 }
+
+#sidebar a:visited {
+	color: black;
+}
+
 #main li {
 	padding: 0.5em 0;
 	margin-left: 0.5em;
+	list-style-image: url("images/not_sign.png");
+}
+#main li.no-marker {
+	list-style: none;
 }
 #main ul {
 	margin: 0 0 0.75em 0.75em;
@@ -81,28 +98,16 @@
 html {
 	background-color: black; /*#404040;*/
 }
-/** The width of the body, and in turn the #main div, was
-  * decided by two things:
-  *  a) The length of the title of CS 613:
-  *		Design and Implementation of Functional Programming.
-  *		I didn't want the title to wrap on desktop browsers. :P
-  *	 b) The width of the page after font boosting on Chrome and
-  *		Firefox on Android. 60em just about perfectly fit in on
-  *		my Nexus 4.
-  *
-  *	I provided Ubuntu as a fallback to Ubuntu Mono (and similarly for
-  *	Droid) because my Nexus 4 browsers (Firefox, Firefox Nightly, 
-  *	Chrome, Chrome Beta) wouldn't work with the monospace versions.
-  *	Opera Mini didn't work with web fonts at all.
-  */
+
 body {
-	font-family: 'Ubuntu Mono', 'Ubuntu', 'Droid Mono', 'Droid', 'Verdana' ,sans;
-	font-size: 16px;
+	font-family: 'Ubuntu Mono', 'Ubuntu', 'Droid Mono', 'Droid', 'Verdana', sans;
+	/*font-size: 16px;*/
 	margin: 0 auto;
 	padding: 0;
-	color: #CECECE;
-	background-color: #222222;
-	width: 60em;
+	color: #121212;
+	background-color: #CCCCCC;
+	width: 100%;
+/*	width: 60em;*/
 }
 h1 {
 	font-size: 2em;
@@ -116,7 +121,7 @@ code {
 }
 
 a:link {
-	color: #0DD;
+	color: #022;
 }
 a:visited {
 	color: #1387B4;
@@ -130,5 +135,107 @@ ol li, ul ol li {
 	list-style: decimal;
 }
 ul li {
-	list-style-image: url("images/not_sign.png");
+	/*list-style-image: url("images/not_sign.png");*/
 }
+
+.section {
+	background: white;
+	color: black;
+	box-shadow: 0.1em 0.1em 0.2em 0.1em rgba(128,128,128,0.75);
+	border-radius: 0.5em;
+	margin-bottom: 1em;
+	padding: 1em;
+	text-align: left;
+}
+.section li {
+	list-style: none;
+}
+.top {
+	float: right;
+	background: rgb(213, 213, 213);
+	padding: 0.5em;
+	/* vertical-align: top; */
+	border-radius: 0.2em;
+	border: 0.2em solid gray;
+	margin-top: -1em;
+	font-size: 1.5em;
+}
+
+@media screen and (orientation:landscape) {
+	#header h1, #header h2 {
+		margin: 0;
+	}
+	#sidebar {
+		padding-top: 1%;
+		/*	min-height: 42em;
+		display: inline-block;*/
+		float: left;
+		font-size: 1.2em;
+		clear: both;
+		text-align: right;
+		height: 100%;
+		vertical-align: top;
+		width: 8em;
+	}
+	#sidebar ul {
+		padding: 0;
+		border-top: 0.1em solid gray;
+		/*border-bottom: 0.1em solid gray;
+		border-right: 0.2em solid white;*/
+		border-radius: 0.3em;
+	}
+	#sidebar li {
+		border-bottom: 0.1em solid gray;
+		border-right: 0.1em solid gray;
+	}
+	div.bugs {
+		margin: 0.5em;
+		display: inline-block;
+	}
+
+	#nav li:hover {
+		box-shadow: 0.1em 0.1em 0.15em 0.05em rgba(100,100,100,0.75);
+	}
+	#main {
+		max-width: 70%;
+		min-width: 22em;
+		width: 60%;
+	}
+}
+
+@media screen and (orientation:portrait) {
+
+	#sidebar {
+		width: 90%;
+		/*	min-height: 42em;*/
+		font-size: 1.5em;
+		clear: both;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#sidebar ul {
+		padding: 0;
+		border-radius: 0.3em;
+	}
+	#sidebar li {
+		border-bottom: 0.1em solid gray;
+		list-style: none;
+		border-radius: 0.3em;
+		margin: 0.2em;
+	}
+	div.bugs {
+		margin: 0.5em;
+		font-size: 1.5em;
+	}
+
+	#main, body {
+		text-align: center;
+	}
+	.section {
+		width: 85%;
+		font-size: 2em;
+		margin: 2em auto;
+	}
+}
+
+
