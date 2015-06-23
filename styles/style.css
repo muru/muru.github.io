@@ -119,6 +119,9 @@ code {
 	font-family: 'Ubuntu Mono', 'Droid Mono', monospace;
 	color: #0D0;
 }
+span {
+	display: block;
+}
 
 a:link {
 	color: #022;
