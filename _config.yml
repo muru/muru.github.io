@@ -7,4 +7,4 @@ defaults:
             path: ""
         values:
             layout: "default"
-            pagestyle: "style.css"
+            pagestyle: "style"
