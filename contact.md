@@ -1,11 +1,13 @@
 ---
 title: Contact
 ---
+
 <div class="section" markdown="1">
 Currently at:
 
 - C-223, Hostel 13, IIT Bombay
-</span>
+</div>
+
 <div class="section" markdown="1">
 Email me at:
 
@@ -13,6 +15,7 @@ Email me at:
 - murukesh [AT] cse.iitb.ac.in
 - m.mohanan [AT] alumni.iitg.ernet.in (defunct) 
 </div>
+
 <div class="section" markdown="1">
 Online:
 
