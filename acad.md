@@ -1,6 +1,7 @@
 ---
 title: Academics
 pagestyle: acad
+permalink: /acad/
 ---
 <div markdown="1" class="section">
 Sem IV courses:

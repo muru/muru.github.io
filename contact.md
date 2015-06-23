@@ -1,5 +1,6 @@
 ---
 title: Contact
+permalink: /contact/
 ---
 
 <div class="section" markdown="1">
