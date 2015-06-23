@@ -1,68 +1,52 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>
-			Muru's home page - Resources.
-		</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="styles/resources.css" type="text/css">
-		<link rel="stylesheet" href="styles/cann-table.css" type="text/css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
-		<script type="text/javascript" src="murujs.js"></script>
-	</head>
-	<body>
-		<!--#include virtual="header.html"-->
-		<div id="main">
-			<div class="section">
-				A CV template in LaTeX (modified from one obtained online, original included): <br>
-				<a href="files/CV-LaTeX.tar.gz">CV-LaTeX.tar.gz</a>
-			</div>
-			<div class="section">
-				Some stuff that I drag around with me on my various Linux boxes:
-				<ol>
-					<li class="no-marker">Vimrc and vim plugins: 
-					<a href="files/vim.tar.bz2">vim.tar.bz2</a><br>
-					Currently contains a nifty <code>vimrc</code>, and some plugins:
-					<ul class="resources-list" id="plugins-list">
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=2332" target="_blank">Pathogen</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=2736" target="_blank">Syntastic</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=1643" target="_blank">SuperTab</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=294" target="_blank">Align</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=884" target="_blank">AutoAlign</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=3109" target="_blank">Latex-Box</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=1697" target="_blank">Surround.vim</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=2603" target="_blank">Haskell Cuteness</a></li>
-						<li><a href="http://www.vim.org/scripts/script.php?script_id=3282" target="_blank">Extended Regex</a></li>
-						<li><a href="https://github.com/lukerandall/haskellmode-vim" target="_blank">Haskell Mode - Vim</a></li>
-						<li><a href="https://github.com/dag/vim2hs" target="_blank">Vim to Haskell</a></li>
-					</ul>
-					<p style="clear: both;padding-top: 0.5em;">You might wanna do a <code>git pull</code> on some of the plugins inside <code>.vim/bundle</code>.
-					</li>
-					<li class="no-marker">Some bash scripts:
-					<ul class="resources-list" style="list-style: decimal">
-						<li><a href="files/curlwc.sh">curlwc.sh</a>:
-						This script uses <a href="http://linux.die.net/man/1/curl" target="_blank">curl(1)</a> to download the target file in parts. Not very robust.
-						</li>
-						<li><a href="files/mtcd.sh">mtcd.sh</a>:
-						This script mounts all arguments in directories within <code>~/cdrom</code> (as ISO9660 images), and also handles unmounting.
-						</li>
-					</ul>
-					These and more can be found on my <a href="https://github.com/murukeshm/scripts" target="_blank">GitHub scrips repo</a>.
-					</li>
-				</ol>
-			</div>
-			<div class="section">
-				<h3 id="cann"><a href="http://www.sussex.ac.uk/Users/iane/cannyclubs.php" target="_blank" >A Cann Table:</a> </h3>
-				<!--#include virtual="cann-table.html"-->
-				<p> I have followed the banding used by <a href="http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/">
-					@7amkickoff</a>.
-				<p> This table is updated weekly via a cronjob. <br>
-				The data is scraped from <a href=http://www.premierleague.com/en-gb/matchday/league-table.html" target="_blank">the PL site</a>
-				without any permission. <br>
-				Hopefully this will count as personal use. :)
-			</div>
-		</div>
-		<!--#include virtual="footer.html"-->
-</body>
-</html>
+---
+title: Resources
+pagestyle: cann-table
+---
+<div class="section">
+	A CV template in LaTeX (modified from one obtained online, original included): <br>
+	<a href="files/CV-LaTeX.tar.gz">CV-LaTeX.tar.gz</a>
+</div>
+<div class="section">
+	Some stuff that I drag around with me on my various Linux boxes:
+	<ol>
+		<li class="no-marker">Vimrc and vim plugins: 
+			<a href="files/vim.tar.bz2">vim.tar.bz2</a><br>
+			Currently contains a nifty <code>vimrc</code>, and some plugins:
+			<ul class="resources-list" id="plugins-list">
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=2332" target="_blank">Pathogen</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=2736" target="_blank">Syntastic</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=1643" target="_blank">SuperTab</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=294" target="_blank">Align</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=884" target="_blank">AutoAlign</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=3109" target="_blank">Latex-Box</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=1697" target="_blank">Surround.vim</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=2603" target="_blank">Haskell Cuteness</a></li>
+				<li><a href="http://www.vim.org/scripts/script.php?script_id=3282" target="_blank">Extended Regex</a></li>
+				<li><a href="https://github.com/lukerandall/haskellmode-vim" target="_blank">Haskell Mode - Vim</a></li>
+				<li><a href="https://github.com/dag/vim2hs" target="_blank">Vim to Haskell</a></li>
+			</ul>
+			<p style="clear: both;padding-top: 0.5em;">You might wanna do a <code>git pull</code> on some of the plugins inside <code>.vim/bundle</code>.
+		</li>
+		<li class="no-marker">Some bash scripts:
+			<ul class="resources-list" style="list-style: decimal">
+				<li><a href="files/curlwc.sh">curlwc.sh</a>:
+					This script uses <a href="http://linux.die.net/man/1/curl" target="_blank">curl(1)</a> to download the target file in parts. Not very robust.
+				</li>
+				<li><a href="files/mtcd.sh">mtcd.sh</a>:
+					This script mounts all arguments in directories within <code>~/cdrom</code> (as ISO9660 images), and also handles unmounting.
+				</li>
+			</ul>
+			These and more can be found on my <a href="https://github.com/murukeshm/scripts" target="_blank">GitHub scrips repo</a>.
+		</li>
+	</ol>
+</div>
+<div class="section">
+	<h3 id="cann"><a href="http://www.sussex.ac.uk/Users/iane/cannyclubs.php" target="_blank" >A Cann Table:</a> </h3>
+	<!--#include virtual="cann-table.html"-->
+	<p> I have followed the banding used by <a href="http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/">
+		@7amkickoff</a>.
+	<p> This table is updated weekly via a cronjob. <br>
+	The data is scraped from <a href=http://www.premierleague.com/en-gb/matchday/league-table.html" target="_blank">the PL site</a>
+	without any permission. <br>
+	Hopefully this will count as personal use. :)
+</div>

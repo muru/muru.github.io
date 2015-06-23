@@ -1,2 +1,10 @@
 name: Murukesh Mohanan, IIT Bombay
 markdown: kramdown
+
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
+            pagestyle: "style.css"
