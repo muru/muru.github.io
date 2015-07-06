@@ -1,6 +1,5 @@
 ---
 title: Murukesh Mohanan
-permalink: /index/
 ---
 
 <div markdown="1" class="section">
