@@ -40,3 +40,11 @@
 	font-size: 0.6em;
 	display: block;
 }
+
+@media screen and (orientation:portrait) {
+	#cann-table-area {
+		width: 100%;
+		overflow: scroll;
+	}
+
+}

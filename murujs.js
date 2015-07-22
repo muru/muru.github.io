@@ -17,15 +17,6 @@ if (!MuruJS) {
 		return true;
 	}
 
-// Green. Green EVERYWHERE. 
-// Didn't get the meme?
-// See http://knowyourmeme.com/memes/x-x-everywhere - mildly NSFW
-	MuruJS.greenText = function () {
-		MuruJS.bodyColor = MuruJS.bodyColor == "#0F0" ? "#AAA" : "#0F0";
-		document.body.style.color = MuruJS.bodyColor;
-		return MuruJS.bodyColor;
-	}
-
 // Add the comment visibility controller to the various events as handler.
 // Call this after the body, so that the DOM is loaded. document.load 
 // doesn't work well. :( I'm doing something wrong.

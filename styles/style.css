@@ -11,8 +11,8 @@
 	border-bottom: 0.2em solid white;
 	padding: 0.1em 3%;
 	margin: 0;
-	font-variant: small-caps;
 	font-size: 2em;
+	font-variant: small-caps;
 	text-align: center;
 }
 /** The #main div is given a min-height so that it isn't
@@ -23,7 +23,7 @@
   */
 #main {
 	padding: 1em 2em;
-	min-height: 42em;
+	min-height: 80vh;
 	/*margin-left: 15%;
 	float: right;
 	display: inline-block;*/
@@ -57,6 +57,9 @@ div.bugs {
 	background: grey;
 	box-shadow: 0.1em 0.1em 0.2em 0 rgba(128,128,128,0.75);
 	border-radius: 0.3em;
+}
+#header ul {
+	padding: 0;
 }
 #header li {
 	list-style: none;
@@ -95,6 +98,16 @@ div.bugs {
 	height: 1em;
 }
 
+#vim-proposal {
+	padding: 1em;
+	text-align: center;
+}
+#vim-proposal img {
+	height: 100%;
+	border-radius: 1vw;
+	overflow: hidden;
+}
+
 html {
 	background-color: black; /*#404040;*/
 }
@@ -109,12 +122,12 @@ body {
 	width: 100%;
 /*	width: 60em;*/
 }
-h1 {
+/*h1 {
 	font-size: 2em;
 }
 h3 {
 	margin-top: 0;
-}
+}*/
 code {
 	font-family: 'Ubuntu Mono', 'Droid Mono', monospace;
 	color: #0D0;
@@ -204,6 +217,11 @@ ul li {
 		min-width: 22em;
 		width: 60%;
 	}
+	#vim-proposal {
+		float: right;
+		height: 15em;
+		max-height: 20vw;
+	}
 }
 
 @media screen and (orientation:portrait) {
@@ -238,6 +256,16 @@ ul li {
 		width: 85%;
 		font-size: 2em;
 		margin: 2em auto;
+	}
+
+	#vim-proposal {
+		height: 100vw;
+		width: 88vw;
+		margin: 0 auto;
+	}
+
+	body {
+		font-size: 2.5vw;
 	}
 }
 

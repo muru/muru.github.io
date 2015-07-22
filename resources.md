@@ -51,7 +51,9 @@ These and more can be found on my [Github scrips repo](https://github.com/muruke
 <div markdown="1" class="section">
 ## [A Cann Table][cann-table] {#cann}
 
+<div id="cann-table-area">
 {% include_relative cann-table.html %}
+</div>
 
 I have followed the banding used by [@7amkickoff][7amkickoff].
 This table is updated weekly via a cronjob.  
