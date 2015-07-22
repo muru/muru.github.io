@@ -6,7 +6,7 @@ permalink: /contact/
 <div class="section" markdown="1">
 Currently at:
 
-- C-223, Hostel 13, IIT Bombay
+- C-227, Hostel 13, IIT Bombay
 </div>
 
 <div class="section" markdown="1">

@@ -191,7 +191,8 @@ ul li {
 		text-align: right;
 		height: 100%;
 		vertical-align: top;
-		width: 8em;
+		width: 10em;
+		max-width: 18vw;
 	}
 	#sidebar ul {
 		padding: 0;
@@ -220,7 +221,7 @@ ul li {
 	#vim-proposal {
 		float: right;
 		height: 15em;
-		max-height: 20vw;
+		max-height: 18vw;
 	}
 }
 
