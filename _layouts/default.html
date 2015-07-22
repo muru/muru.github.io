@@ -11,10 +11,10 @@
 		<title>
 			{{ page.title }} &ndash; Muru's home page.
 		</title>
-		<link rel="stylesheet" href="/styles/{{ page.pagestyle }}.css" type="text/css">
+		<link rel="stylesheet" href="{{ site.root_url }}/styles/{{ page.pagestyle }}.css" type="text/css">
 <!-- Web Fonts FTW! -->
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
-		<script type="text/javascript" src="/murujs.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+		<script type="text/javascript" src="{{ site.root_url }}/murujs.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -29,10 +29,10 @@
 			<!-- Navigational link. -->
 			<h3>
 				<ul>
-					<li><a href="/">Main</a></li>
-					<li><a href="/acad">Acads</a></li>
-					<li><a href="/resources">Resources</a></li>
-					<li><a href="/contact">Contact<br> <span id="contact-comment">(Please don't!)</span></a></li>
+					<li><a href="{{ site.root_url }}/">Main</a></li>
+					<li><a href="{{ site.root_url }}/acad">Acads</a></li>
+					<li><a href="{{ site.root_url }}/resources">Resources</a></li>
+					<li><a href="{{ site.root_url }}/contact">Contact<br> <span id="contact-comment">(Please don't!)</span></a></li>
 				</ul>
 			</h3>
 		</div>
@@ -44,7 +44,7 @@
 		<div id="footer">
 			<div class="section">
 			<!-- Copyleft FTW! -->
-			<img src="/images/Copyleft.png" style="height: 1em;" alt="copyleft"> Murukesh Mohanan.
+			<img src="{{ site.root_url }}/images/Copyleft.png" style="height: 1em;" alt="copyleft"> Murukesh Mohanan.
 			<p>Permission to use content is granted under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">the CC BY-SA license</a>.
 			<p>The font used here is the Ubuntu font, via Google Web Fonts.
 			</div>

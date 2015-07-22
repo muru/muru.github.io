@@ -1,5 +1,9 @@
 @import 'style.css';
 
+#plugins-list {
+	overflow: auto;
+}
+
 #plugins-list li {
 	float: left;
 	width: 10em;

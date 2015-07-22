@@ -1,5 +1,6 @@
 name: Murukesh Mohanan, IIT Bombay
 markdown: kramdown
+root_url: ""
 
 defaults:
     -
