@@ -24,7 +24,7 @@ Sem III courses:
 Sem II courses:
 
 - CS 534: Quantum Information and Computing
-- [CS 715](http://www.cse.iitb.ac.in/page134?course=CS+715): Design and Implementation of Gnu Compiler Generation Framework
+- [CS 715](http://www.cse.iitb.ac.in/page134?course=CS+715): Design and Implementation of GNU Compiler Generation Framework
 - [CS 726](http://www.cse.iitb.ac.in/page134?course=CS+726): Advanced Machine Learning
 
 </div>

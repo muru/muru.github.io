@@ -5,7 +5,10 @@ permalink: /resources/
 ---
 <div markdown="1" class="section">
 A CV template in LaTeX (modified from one obtained online, original included):  
-[CV-LaTeX.tar.gz](files/CV-LaTeX.tar.gz)
+
+- (outdated) tarball: [CV-LaTeX.tar.gz]({{ site.root_url }}/files/CV-LaTeX.tar.gz)
+- [CSE Git](https://git.cse.iitb.ac.in/murukesh/cv)
+
 </div>
 
 <div markdown="1" class="section">
@@ -13,7 +16,9 @@ Some stuff that I drag around with me on my various Linux boxes:
 
 ## Vimrc and vim plugins {#vim}
 
-### [vim.tar.bz2](files/vim.tar.bz2) {#vim-archive}
+- (outdated) tarball: [vim.tar.bz2]({{ site.root_url }}/files/vim.tar.bz2)
+- [CSE Git](https://git.cse.iitb.ac.in/murukesh/vimrc)
+- [Github](https://github.com/murukeshm/vimrc)
 
 <div markdown="1" class="resources-list" id="plugins-list">
 
@@ -33,6 +38,11 @@ Currently contains a nifty `vimrc`, and some plugins:
 
 </div>
 You might wanna do a `git pull` on some of the plugins inside `.vim/bundle`.
+
+**Bonus**: My dotfile repos:
+
+- [CSE Git](https://git.cse.iitb.ac.in/murukesh/home)
+- [Github](https://github.com/murukeshm/home)
 
 ---
 
