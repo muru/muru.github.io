@@ -199,7 +199,7 @@ All told:
 Footnote:
 
 This is my first blog post using [Jekyll](http://jekyllrb.com/). Writing it, I
-have learned quiet a bit, which I will write about in another post soon.
+have learned quite a bit, which I will write about in another post soon.
 
  [Unix.SE]: http://unix.stackexchange.com
  [Vim.SE]: http://vi.stackexchange.com

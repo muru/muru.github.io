@@ -37,7 +37,8 @@ img {
 @media screen and (orientation:landscape) {
 	.post-date {
 		float: right;
-		border-right: solid 0.1em black;
+		border-left: solid 0.2em black;
+		padding-left: 0.5em;
 	}
 }
 

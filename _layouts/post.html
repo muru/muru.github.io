@@ -5,7 +5,7 @@ pagestyle: posts
 
 <header class="section post-title">
 	<h1>
-		<a href="{{ page.url }}">
+		<a href="{{ site.root_url }}{{ page.url }}">
 			{{ page.title }}
 		</a>
 		<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
