@@ -26,12 +26,28 @@ img {
 	max-width: 100%;
 }
 
-.linenos, .lineno {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: -moz-none;
-    -o-user-select: none;
-    user-select: none;
+/* 
+ * From http://drewsilcock.co.uk/proper-linenumbers/
+ */
+
+pre {
+    counter-reset: line-numbering;
+}
+
+pre a::before {
+  content: counter(line-numbering);
+  counter-increment: line-numbering;
+  padding-right: 1em; /* space after numbers */
+  text-align: right;
+  opacity: 0.4;
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width: 1em;
 }
 
 @media screen and (orientation:landscape) {
