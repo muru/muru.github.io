@@ -51,4 +51,8 @@ img {
 	.post-title h1 {
 		margin: 0;
 	}
+
+	kbd {
+		font-size: small;
+	}
 }
