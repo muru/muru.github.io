@@ -3,6 +3,7 @@ markdown: kramdown
 root_url: ""
 timezone: Asia/Kolkatta
 highlighter: pygments
+myurl: http://murukesh.me/
 
 kramdown:
     input: GFM
