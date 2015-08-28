@@ -55,6 +55,9 @@ pre span.lineno {
 	visibility: collapse;
 }
 
+.comments {
+	background-color: grey;
+}
 @media screen and (orientation:landscape) {
 	.post-date {
 		float: right;
