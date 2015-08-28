@@ -83,7 +83,7 @@ a manpage no matter how I opened it. Hence, they should really be in Vim's
 filetype settings for `man`. So, I created a `~/.vim/ftplugin/man.vim`,
 containing:
 
-{% highlight vim lineanchors %}
+{% highlight vim linenos %}
 function! PrepManPager()
 	if !empty ($MAN_PN)
 		silent %! col -b
@@ -118,7 +118,7 @@ A bit of experimentation later, I found that:
 Knowing that I'm reading from `stdin` and that `MAN_PN` is set (to the manpage
 name!), I came up with this version:
 
-{% highlight vim lineanchors %}
+{% highlight vim linenos %}
 " vimrc
 if !empty($MAN_PN)
 	autocmd StdinReadPost * set ft=man | file $MAN_PN

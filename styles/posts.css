@@ -34,20 +34,25 @@ pre {
     counter-reset: line-numbering;
 }
 
-pre a::before {
-  content: counter(line-numbering);
-  counter-increment: line-numbering;
-  padding-right: 1em; /* space after numbers */
-  text-align: right;
-  opacity: 0.4;
-  display: inline-block;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  min-width: 1em;
+pre span.lineno::after {
+	content: counter(line-numbering);
+	counter-increment: line-numbering;
+	text-align: right;
+	opacity: 0.4;
+	display: inline-block;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	min-width: 1em;
+	visibility: visible;
+	margin-left: -1em;
+}
+
+pre span.lineno {
+	visibility: collapse;
 }
 
 @media screen and (orientation:landscape) {
