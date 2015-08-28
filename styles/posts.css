@@ -1,0 +1,53 @@
+@import 'code.css';
+
+#post ul li {
+	padding: 0.2em;
+}
+
+.post-title a {
+	text-decoration: none;
+}
+
+kbd {
+	border: solid black 0.05em ;
+	box-shadow: 0 0.1em 0.1em 0.2em rgba(100,100,100,0.75);
+    padding: 0.1em 0.5em;
+	border-radius: 0.15em;
+	background: #FEFEFE;
+	margin: 0 0.2em;
+}
+
+blockquote {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.linenos, .lineno {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@media screen and (orientation:landscape) {
+	.post-date {
+		float: right;
+		border-right: solid 0.1em black;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.post-date {
+		font-size: initial;
+		display: block;
+		text-align: right;
+	}
+	.post-title h1 {
+		margin: 0;
+	}
+}

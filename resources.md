@@ -3,15 +3,15 @@ title: Resources
 pagestyle: cann-table
 permalink: /resources/
 ---
-<div markdown="1" class="section">
+<section markdown="1">
 A CV template in LaTeX (modified from one obtained online, original included):  
 
 - (outdated) tarball: [CV-LaTeX.tar.gz]({{ site.root_url }}/files/CV-LaTeX.tar.gz)
 - [CSE Git](https://git.cse.iitb.ac.in/murukesh/cv)
 
-</div>
+</section>
 
-<div markdown="1" class="section">
+<section markdown="1">
 Some stuff that I drag around with me on my various Linux boxes:
 
 ## Vimrc and vim plugins {#vim}
@@ -25,19 +25,24 @@ Some stuff that I drag around with me on my various Linux boxes:
 Currently contains a nifty `vimrc`, and some plugins:
 
 - [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332) 
-- [Syntastic](http://www.vim.org/scripts/script.php?script_id=2736) 
-- [SuperTab](http://www.vim.org/scripts/script.php?script_id=1643) 
-- [Align](http://www.vim.org/scripts/script.php?script_id=294) 
-- [AutoAlign](http://www.vim.org/scripts/script.php?script_id=884) 
-- [Latex-Box](http://www.vim.org/scripts/script.php?script_id=3109) 
-- [Surround.vim](http://www.vim.org/scripts/script.php?script_id=1697) 
-- [Haskell Cuteness](http://www.vim.org/scripts/script.php?script_id=2603) 
-- [Extended Regex](http://www.vim.org/scripts/script.php?script_id=3282) 
-- [Haskell Mode - Vim](https://github.com/lukerandall/haskellmode-vim) 
-- [Vim to Haskell](https://github.com/dag/vim2hs) 
+- [diffchar.vim](https://github.com/vim-scripts/diffchar.vim)
+- [eregex.vim](https://github.com/othree/eregex.vim.git)
+- [nerdtree](https://github.com/scrooloose/nerdtree.git)
+- [supertab](https://github.com/ervandew/supertab.git)
+- [syntastic](https://github.com/scrooloose/syntastic.git)
+- [vim2hs](https://github.com/dag/vim2hs)
+- [vim-surround](https://github.com/tpope/vim-surround.git)
+- [LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box.git)
+- [ctrlp.vim](https://github.com/kien/ctrlp.vim)
+- [vim-airline](https://github.com/bling/vim-airline)
+- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive.git)
+- [AnsiEsc.vim](https://github.com/vim-scripts/AnsiEsc.vim)
 
 </div>
-You might wanna do a `git pull` on some of the plugins inside `.vim/bundle`.
+You might wanna do a `git pull` on some of the plugins inside `.vim/bundle`:
+
+    git submodule foreach git pull -u origin master
 
 **Bonus**: My dotfile repos:
 
@@ -56,9 +61,9 @@ This script mounts all arguments in directories within `~/cdrom` (as ISO9660 ima
 </div>
 
 These and more can be found on my [Github scrips repo](https://github.com/murukeshm/scripts).
-</div>
+</section>
 
-<div markdown="1" class="section">
+<section markdown="1">
 ## [A Cann Table][cann-table] {#cann}
 
 <div id="cann-table-area">
@@ -74,4 +79,4 @@ Hopefully this will count as personal use. :)
 [cann-table]: http://www.sussex.ac.uk/Users/iane/cannyclubs.php
 [7amkickoff]: http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/
 [epl]: http://www.premierleague.com/en-gb/matchday/league-table.html
-</div>
+</section>

@@ -1,6 +1,12 @@
 name: Murukesh Mohanan, IIT Bombay
 markdown: kramdown
 root_url: ""
+timezone: Asia/Kolkatta
+highlighter: pygments
+
+kramdown:
+    input: GFM
+    hard_wrap: false
 
 defaults:
     -
@@ -8,4 +14,10 @@ defaults:
             path: ""
         values:
             layout: "default"
-            pagestyle: "style"
+
+pages_list:
+    Main: ''
+    Acads: 'acad'
+    Resources: 'resources'
+    Blog: 'blog'
+    Contact: 'contact'

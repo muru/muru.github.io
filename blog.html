@@ -1,0 +1,19 @@
+---
+title: Blog
+permalink: /blog/
+pagestyle: posts
+---
+
+{% for post in site.posts %}
+<section markdown="1">
+	<header class="post-title">
+		<h1>
+			<a href="{{ post.url }}#main">{{ post.title }}</a>
+			<time datetime="{{ post.date | date_to_xmlschema }}" class="post-date"> {{ post.date | date: "%B %e, %Y" }}</time>
+		</h1>
+	</header>
+
+	<hr>
+	{{ post.excerpt }}
+</section>
+{% endfor %}

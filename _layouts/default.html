@@ -10,54 +10,54 @@
 		<title>
 			{{ page.title }} &ndash; Muru's home page.
 		</title>
+		<link rel="stylesheet" href="{{ site.root_url }}/styles/style.css" type="text/css">
 		<link rel="stylesheet" href="{{ site.root_url }}/styles/{{ page.pagestyle }}.css" type="text/css">
 <!-- Web Fonts FTW! -->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
-		<script type="text/javascript" src="{{ site.root_url }}/murujs.js"></script>
 	</head>
 	<body>
-		<div id="header">
-			<h2>Murukesh Mohanan</h2>
+		<header id="title">
+			<h1>
+				Murukesh Mohanan
+			</h1>
 			<ul>
-				<li>Third  year, Master of Technology in Computer Science
-					and Engineering</li>
-				<li>RA, System Administration, CSE</li>
+				<li>
+					Third  year, Master of Technology in Computer Science
+					and Engineering
+				</li>
+				<li>
+					RA, System Administration, CSE
+				</li>
 			</ul>
-		</div>
-		<div id="sidebar">
-			<!-- Navigational link. -->
-			<h3>
-				<ul>
-					<a href="{{ site.root_url }}/"><li>Main</li></a>
-					<a href="{{ site.root_url }}/acad#main"><li>Acads</li></a>
-					<a href="{{ site.root_url }}/resources#main"><li>Resources</li></a>
-					<a href="{{ site.root_url }}/contact#main"><li>Contact<br> <span id="contact-comment">(Please don't!)</span></li></a>
-				</ul>
-			</h3>
-		</div>
+		</header>
+		<nav>
+			<ul>
+				{% for page in site.pages_list %}
+				<a href="{{ site.root_url }}/{{ page[1] }}#main">
+					<li>
+						{{ page[0] }}
+					</li>
+				</a>
+				{% endfor %}
+			</ul>
+		</nav>
 		<div id="vim-proposal"> 
 			<a href="http://area51.stackexchange.com/proposals/80441/vi-and-vim?referrer=cSyv9sCu62iNAfGtTTKvSg2">
 				<img src="http://area51.stackexchange.com/ads/proposal/80441.png" alt="Stack Exchange Q&A site proposal: Vi and vim" />
 			</a>
 		</div>
-		<div id="main" markdown="1">
+		<article id="main">
 
 			{{ content }}
 
-		</div>
-		<div id="footer">
-			<div class="section">
+		</article>
+		<footer>
+			<section>
 			<!-- Copyleft FTW! -->
 			<img src="{{ site.root_url }}/images/Copyleft.png" style="height: 1em;" alt="copyleft"> Murukesh Mohanan.
-			<p>Permission to use content is granted under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">the CC BY-SA license</a>.
-			<p>The font used here is the Ubuntu font, via Google Web Fonts.
-			</div>
-		</div> 
+			<p>Permission to use content is granted under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">the CC BY-SA license</a>.</p>
+			<p>The font used here is the Ubuntu font, via Google Web Fonts.</p>
+			</section>
+		</footer> 
 	</body>
-	<script type="text/javascript">
-/* 
- *The init() function assigns the event handlers.
- */
-	MuruJS.init();
-	</script>
 </html>
