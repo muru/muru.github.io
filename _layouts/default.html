@@ -11,8 +11,9 @@
 		<title>
 			{{ page.title }} &ndash; Muru's home page.
 		</title>
-		<link rel="stylesheet" href="{{ site.root_url }}/styles/style.css" type="text/css">
-		<link rel="stylesheet" href="{{ site.root_url }}/styles/{{ page.pagestyle }}.css" type="text/css">
+		<link rel="stylesheet" href="{{ site.base-url }}/styles/style.css" type="text/css">
+		<link rel="stylesheet" href="{{ site.base-url }}/styles/{{ page.pagestyle }}.css" type="text/css">
+		<link rel="stylesheet" href="{{ site.base-url }}/public/css/gpgc_style.css">
 <!-- Web Fonts FTW! -->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
 	</head>
@@ -21,20 +22,11 @@
 			<h1>
 				Murukesh Mohanan
 			</h1>
-			<ul>
-				<li>
-					Third  year, Master of Technology in Computer Science
-					and Engineering
-				</li>
-				<li>
-					RA, System Administration, CSE
-				</li>
-			</ul>
 		</header>
 		<nav>
 			<ul>
 				{% for page in site.pages_list %}
-				<a href="{{ site.root_url }}/{{ page[1] }}#main">
+				<a href="{{ site.base-url }}/{{ page[1] }}#main">
 					<li>
 						{{ page[0] }}
 					</li>
@@ -42,11 +34,13 @@
 				{% endfor %}
 			</ul>
 		</nav>
+		<!--
 		<div id="vim-proposal"> 
 			<a href="http://area51.stackexchange.com/proposals/80441/vi-and-vim?referrer=cSyv9sCu62iNAfGtTTKvSg2">
 				<img src="http://area51.stackexchange.com/ads/proposal/80441.png" alt="Stack Exchange Q&A site proposal: Vi and vim" />
 			</a>
 		</div>
+		-->
 		<article id="main">
 
 			{{ content }}
@@ -55,7 +49,7 @@
 		<footer>
 			<section>
 			<!-- Copyleft FTW! -->
-			<img src="{{ site.root_url }}/images/Copyleft.png" style="height: 1em;" alt="copyleft"> Murukesh Mohanan.
+			<img src="{{ site.base-url }}/images/Copyleft.png" style="height: 1em;" alt="copyleft"> Murukesh Mohanan.
 			<p>Permission to use content is granted under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">the CC BY-SA license</a>.</p>
 			<p>The font used here is the Ubuntu font, via Google Web Fonts.</p>
 			</section>

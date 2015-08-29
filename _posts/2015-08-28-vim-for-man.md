@@ -55,6 +55,8 @@ command in `sh -c`:
 
 **Ugly.** I also hate having to deal with quoting.
 
+<!-- section -->
+
 At this point, it struck me: Why should I run this via a pipe? Once Vim starts,
 I can perfectly well use `%! col -b` to do the job. So:
 
@@ -69,7 +71,7 @@ quit a manpage, you'd have to do `:q!`, not just `:q`. Thankfully, one of the
 options set ([`nomod`][nomod]) tells Vim that the buffer hasn't been modified.
 Therefore, we can just use `:q`:
 
-    nnoremap q :q
+    nnoremap q :q<CR>
 
 Other considerations arise:
 
@@ -104,16 +106,24 @@ I picked [`VimEnter`][vimenter] since it runs after any commands specified using
 However, I realised that:
 
 - I wanted to apply some of these settings to manpages irrespective of how they
-  were made; and
+  were opened; and
 - I'd rather not specify `set ft=man` from the command line, keeping an eye on
-  using Vim as a general-purpose pager
-- Using `VimEnter *` felt *wrong*
+  using Vim as a general-purpose pager;
+- Using `VimEnter *` felt *wrong*.
 
 A bit of experimentation later, I found that:
 
 1. `man` doesn't seem to ever provide a filename as an argument, irrespective of
    what the manpage says.
 2. `man` sets `MAN_PN` to the manpage name (`man(1)`, for example)
+
+<aside markdown="1">
+Git does something similar. When opening logs via `PAGER='vim -' git log`, for
+example, you'll find that an environment variable name `GIT_PREFIX` exists
+(though, oddly enough, possibly empty).
+</aside>
+
+<!-- section -->
 
 Knowing that I'm reading from `stdin` and that `MAN_PN` is set (to the manpage
 name!), I came up with this version:
@@ -156,7 +166,8 @@ Beautiful!
 What does this do?
 
 1. In the main `vimrc`, I check if I'm reading from `stdin` and if `MAN_PN` is
-   set. If so, set the filetype *and the filename*.
+   set. If so, set the filetype to `man` *and the filename to the contents of
+   `MAN_PN`*.
 2. In the filetype-specific setting, use an `autocmd` the relies on the filename
    being `$MAN_PN` to apply `col -b`.
 3. Set `nomodified` to tell Vim that the buffer hasn't been modified, and
@@ -192,11 +203,13 @@ I have no idea how to suppress the `stdin` message from Vim itself.
 ---
 All told:
 
-[![man in Vim]({{ site.root_url }}/images/vim-man.png)]({{ site.root_url }}/images/vim-man.png)
+[![man in Vim]({{ site.base-url }}/images/vim-man.png)]({{ site.base-url }}/images/vim-man.png)
 
 ---
 
-Footnote:
+<!-- section -->
+
+## Footnote
 
 This is my first blog post using [Jekyll](http://jekyllrb.com/). Writing it, I
 have learned quite a bit, which I will write about in another post soon.

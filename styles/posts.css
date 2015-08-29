@@ -56,7 +56,7 @@ pre span.lineno {
 }
 
 .comments {
-	background-color: grey;
+	background-color: darkslategrey;
 }
 @media screen and (orientation:landscape) {
 	.post-date {

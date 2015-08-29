@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% assign sections = content | split: site.section_separator %}
+{% for section in sections %}
+<section>
+	{{ section }}
+</section>
+{% endfor %}
+

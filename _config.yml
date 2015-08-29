@@ -1,9 +1,13 @@
 name: Murukesh Mohanan, IIT Bombay
 markdown: kramdown
-root_url: ""
+base-url: ""
 timezone: Asia/Kolkatta
 highlighter: pygments
 myurl: http://murukesh.me/
+section_separator: "<!-- section -->"
+
+gems:
+  - jekyll-sitemap
 
 kramdown:
     input: GFM
@@ -14,7 +18,7 @@ defaults:
         scope:
             path: ""
         values:
-            layout: "default"
+            layout: "page"
 
 pages_list:
     Main: ''

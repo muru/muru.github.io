@@ -32,8 +32,8 @@ cd ~/devel/web &&
 
 ---
 
-`_sitename.yml` is a way of tricking Jekyll into adding a `root_url` to
-the generated URLs.  On Github, the file isn't read and `root_url` is
+`_sitename.yml` is a way of tricking Jekyll into adding a `base-url` to
+the generated URLs.  On Github, the file isn't read and `base-url` is
 empty, leading to absolute URLs from the root of the site. On the CSE
-home folder, `_sitename.yml` defines `root_url` to be `~murukesh`,
+home folder, `_sitename.yml` defines `base-url` to be `~murukesh`,
 making the URLs relative to my home directory.

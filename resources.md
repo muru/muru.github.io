@@ -3,24 +3,13 @@ title: Resources
 pagestyle: cann-table
 permalink: /resources/
 ---
-<section markdown="1">
-A CV template in LaTeX (modified from one obtained online, original included):  
+# Vim: `vimrc` and plugins {#vim}
 
-- (outdated) tarball: [CV-LaTeX.tar.gz]({{ site.root_url }}/files/CV-LaTeX.tar.gz)
-- [CSE Git](https://git.cse.iitb.ac.in/murukesh/cv)
-
-</section>
-
-<section markdown="1">
-Some stuff that I drag around with me on my various Linux boxes:
-
-## Vimrc and vim plugins {#vim}
-
-- (outdated) tarball: [vim.tar.bz2]({{ site.root_url }}/files/vim.tar.bz2)
+- (outdated) tarball: [vim.tar.bz2]({{ site.base-url }}/files/vim.tar.bz2)
 - [CSE Git](https://git.cse.iitb.ac.in/murukesh/vimrc)
 - [Github](https://github.com/murukeshm/vimrc)
 
-<div markdown="1" class="resources-list" id="plugins-list">
+<div markdown="1" id="plugins-list">
 
 Currently contains a nifty `vimrc`, and some plugins:
 
@@ -49,22 +38,28 @@ You might wanna do a `git pull` on some of the plugins inside `.vim/bundle`:
 - [CSE Git](https://git.cse.iitb.ac.in/murukesh/home)
 - [Github](https://github.com/murukeshm/home)
 
----
+<!-- section -->
 
-## Some scripts {#scripts}
+# Some scripts {#scripts}
 
-<div markdown="1" class="resources-list">
 - [curlwc.sh](files/curlwc.sh):
 This script uses [curl(1)](http://linux.die.net/man/1/curl) to download the target file in parts. Not very robust.
 - [mtcd.sh](files/mtcd.sh):
 This script mounts all arguments in directories within `~/cdrom` (as ISO9660 images), and also handles unmounting.
-</div>
 
 These and more can be found on my [Github scrips repo](https://github.com/murukeshm/scripts).
-</section>
 
-<section markdown="1">
-## [A Cann Table][cann-table] {#cann}
+<!-- section -->
+
+# CV
+A CV template in LaTeX (modified from one obtained online, original included):  
+
+- (outdated) tarball: [CV-LaTeX.tar.gz]({{ site.base-url }}/files/CV-LaTeX.tar.gz)
+- [CSE Git](https://git.cse.iitb.ac.in/murukesh/cv)
+
+<!-- section -->
+
+# [A Cann Table][cann-table] {#cann}
 
 <div id="cann-table-area">
 {% include_relative cann-table.html %}
@@ -79,4 +74,3 @@ Hopefully this will count as personal use. :)
 [cann-table]: http://www.sussex.ac.uk/Users/iane/cannyclubs.php
 [7amkickoff]: http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/
 [epl]: http://www.premierleague.com/en-gb/matchday/league-table.html
-</section>
