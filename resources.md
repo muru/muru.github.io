@@ -42,9 +42,9 @@ You might wanna do a `git pull` on some of the plugins inside `.vim/bundle`:
 
 # Some scripts {#scripts}
 
-- [curlwc.sh](files/curlwc.sh):
+- [curlwc.sh](https://github.com/murukeshm/scripts/blob/master/curlwc.sh):
 This script uses [curl(1)](http://linux.die.net/man/1/curl) to download the target file in parts. Not very robust.
-- [mtcd.sh](files/mtcd.sh):
+- [mtcd.sh](https://github.com/murukeshm/scripts/blob/master/mtcd.sh):
 This script mounts all arguments in directories within `~/cdrom` (as ISO9660 images), and also handles unmounting.
 
 These and more can be found on my [Github scrips repo](https://github.com/murukeshm/scripts).

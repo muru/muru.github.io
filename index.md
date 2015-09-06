@@ -13,7 +13,7 @@ opportunity to hone my skills. :)
 
 <!-- section -->
 
-I share the hobby of the masses - reading. :P  Favourite books include *The
+I share the hobby of the masses - reading. :stuck_out_tongue:  Favourite books include *The
 Green Mile*, *The Wheel of Time* series, the *Foundation* series and the *Rama*
 series.
 
