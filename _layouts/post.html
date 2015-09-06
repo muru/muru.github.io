@@ -24,7 +24,7 @@ pagestyle: posts
 
 {% assign sections = content | split: site.section_separator %}
 {% for section in sections %}
-<section class="post">
+<section>
 	{{ section }}
 </section>
 {% endfor %}

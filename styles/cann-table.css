@@ -40,7 +40,7 @@
 	display: block;
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
 	#cann-table-area {
 		width: 100%;
 		overflow: scroll;

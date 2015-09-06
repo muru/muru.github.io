@@ -4,7 +4,7 @@
 	font-size: x-large;
 	font-variant: small-caps;
 	text-align: center;
-	min-height: 5em;
+	min-height: 4em;
 	background-color: lightslategrey;
 	color: whitesmoke;
 }
@@ -74,6 +74,7 @@ footer img {
 	padding: 1em;
 	text-align: center;
 }
+
 #vim-proposal img {
 	height: 100%;
 	border-radius: 1vw;
@@ -159,14 +160,13 @@ pre code strong {
 	font-size: 1.5em;
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
 	nav {
 		padding-top: 1%;
 		/*	min-height: 42em;
 		display: inline-block;*/
 		float: left;
 		font-size: 1.2em;
-		clear: both;
 		text-align: right;
 		height: 100%;
 		vertical-align: top;
@@ -184,50 +184,56 @@ pre code strong {
 		border-bottom: 0.1em solid gray;
 		border-right: 0.1em solid gray;
 	}
-
 	nav li:hover {
 		box-shadow: 0.1em 0.1em 0.15em 0.05em rgba(100,100,100,0.75);
 	}
+
 	#main {
-		max-width: 70%;
+		max-width: 70vw;
 		min-width: 22em;
 		width: 60%;
 	}
+
 	#vim-proposal {
 		float: right;
 		height: 15em;
 		max-height: 18vw;
+		max-width: 10vw;
 	}
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
+
+	#title h1 {
+		margin: 0.2em;
+	}
 
 	nav {
 		width: 90%;
 		/*	min-height: 42em;*/
-		font-size: 1.5em;
-		clear: both;
+		font-size: 2em;
 		text-align: center;
 		margin: 0 auto;
 	}
 	nav ul {
 		padding: 0;
-		border-radius: 0.3em;
 	}
 	nav li {
-		border-bottom: 0.1em solid gray;
 		list-style: none;
 		border-radius: 0.3em;
 		margin: 0.2em;
+		box-shadow: 0.1em 0.1em 0.15em 0.05em rgba(100,100,100,0.75);
 	}
 
 	#main, body {
 		text-align: center;
 	}
+
 	section, .section {
 		width: 85%;
 		font-size: 2em;
 		margin: 2em auto;
+		background-color: whitesmoke;
 	}
 
 	#vim-proposal {

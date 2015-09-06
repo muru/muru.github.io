@@ -35,30 +35,32 @@ pre {
 }
 
 pre span.lineno::after {
-	content: counter(line-numbering);
+	content: counter(line-numbering, decimal-leading-zero);
 	counter-increment: line-numbering;
-	text-align: right;
 	opacity: 0.4;
-	display: inline-block;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	min-width: 1em;
 	visibility: visible;
 	margin-left: -1em;
 }
 
 pre span.lineno {
 	visibility: collapse;
+	text-align: right;
+	display: inline-block;
+	min-width: 1em;
 }
 
 .comments {
 	background-color: darkslategrey;
+	overflow: auto;
 }
-@media screen and (orientation:landscape) {
+
+@media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
 	.post-date {
 		float: right;
 		border-left: solid 0.2em black;
@@ -66,7 +68,7 @@ pre span.lineno {
 	}
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
 	.post-date {
 		font-size: initial;
 		display: block;

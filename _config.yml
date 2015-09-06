@@ -8,6 +8,7 @@ section_separator: "<!-- section -->"
 
 gems:
   - jekyll-sitemap
+  - jemoji
 
 kramdown:
     input: GFM
@@ -21,7 +22,7 @@ defaults:
             layout: "page"
 
 pages_list:
-    Main: ''
+    About: ''
     Acads: 'acad'
     Resources: 'resources'
     Blog: 'blog'
