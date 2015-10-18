@@ -1,5 +1,3 @@
-#main li {
-	list-style-image: url("../images/not_sign.png");
-	padding: 0.1em;
-	list-style-position: inside;
+.domain::before {
+	content: "@";
 }

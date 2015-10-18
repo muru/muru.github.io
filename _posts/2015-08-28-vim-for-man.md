@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Vim as $MANPAGER
+tags: [vim]
 ---
 
 Long, long ago, in a hostel room far, far away, I once read about using Vim as
@@ -145,7 +146,7 @@ setlocal nomodifiable
 function! PrepManPager()
 	setlocal modifiable
 	if !empty ($MAN_PN)
-		silent %! col -b
+		silent %! col -b -x
 	endif
 	setlocal nomodified
 	setlocal nomodifiable
@@ -173,8 +174,10 @@ What does this do?
 3. Set `nomodified` to tell Vim that the buffer hasn't been modified, and
    make it a read-only, non-modifiable, scratch buffer.
 4. Also, map `q` to `:qa`, so that I can quit all opened manpages, and
-   <kbd>Space</kbd> to <kbd>Page Down</kbd>, in keeping with the usual behaviour
+   <kbd>Space</kbd> to <kbd>Page&nbsp;Down</kbd>, in keeping with the usual behaviour
    of `less`.
+5. `col -b`'s use of tabs led to messed up alignment. I had to use `-x` (replace
+   tabs with spaces) so that, for example, `man ascii` showed up properly.
 
 Finally, `man man` opens up pretty much as I'd like it to.
 

@@ -18,8 +18,9 @@ kbd {
 }
 
 blockquote {
-	padding: 0;
+	padding: 0.5em 2em;
 	margin: 0;
+	background-color: whitesmoke;
 }
 
 img {

@@ -1,5 +1,6 @@
 ---
 title: Contact
+pagestyle: contact
 permalink: /contact/
 ---
 
@@ -11,9 +12,9 @@ Currently at:
 
 Email me at:
 
-- murukesh.mohanan [AT] gmail.com
-- murukesh [AT] cse.iitb.ac.in
-- m.mohanan [AT] alumni.iitg.ernet.in (defunct) 
+- murukesh.mohanan<span class="domain">gmail.com</span>
+- murukesh<span class="domain">cse.iitb.ac.in</span>
+- murukesh<span class="domain">iitb.ac.in</span>
 
 <!-- section -->
 
