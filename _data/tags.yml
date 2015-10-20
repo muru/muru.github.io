@@ -1,0 +1,35 @@
+vim:
+    name: Vim
+    desc: The One True Editor
+
+config:
+    name: Configuration
+    desc: COnfiguration of various software that I use
+
+life:
+    name: Thoughts on Life
+    desc: Thoughts on Life, the Universe, and Everything Else.
+
+lit:
+    name: Literature
+    desc: Thoughts on things I read
+
+jekyll:
+    name: Jekyll
+    desc: The Jekyll site generator
+
+programming:
+    name: Programming
+    desc: Thoughts on programming and scripting
+
+arsenal:
+    name: Arsenal F. C.
+    desc: The club I adore - Arsenal Football Club
+
+football:
+    name: Football
+    desc: Thoughts on Football
+
+tech:
+    name: Technology
+    desc: Thoughts on Technology

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Back to Dihing!
+tags: [life]
 ---
 
 So, finally I'm, back in Dihing, my second home... It does feel great to be

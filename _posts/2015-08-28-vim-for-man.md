@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vim as $MANPAGER
-tags: [vim]
+tags: [vim, config]
 ---
 
 Long, long ago, in a hostel room far, far away, I once read about using Vim as
