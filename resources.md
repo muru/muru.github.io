@@ -15,19 +15,24 @@ Currently contains a nifty `vimrc`, and some plugins:
 
 - [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332) 
 - [diffchar.vim](https://github.com/vim-scripts/diffchar.vim)
-- [eregex.vim](https://github.com/othree/eregex.vim.git)
 - [nerdtree](https://github.com/scrooloose/nerdtree.git)
 - [supertab](https://github.com/ervandew/supertab.git)
 - [syntastic](https://github.com/scrooloose/syntastic.git)
 - [vim2hs](https://github.com/dag/vim2hs)
 - [vim-surround](https://github.com/tpope/vim-surround.git)
-- [LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box.git)
-- [ctrlp.vim](https://github.com/kien/ctrlp.vim)
 - [vim-airline](https://github.com/bling/vim-airline)
-- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive.git)
-- [AnsiEsc.vim](https://github.com/vim-scripts/AnsiEsc.vim)
+- [vimtex](https://github.com/lervag/vimtex)
+- [molokai](https://github.com/tomasr/molokai.git)
+- [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
+- [vim-markdown](https://github.com/gabrielelana/vim-markdown)
 
+Old plugins:
+
+- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git) - *replaced with just the molokai scheme*
+- [eregex.vim](https://github.com/othree/eregex.vim.git) - didn't use it enough
+- [ctrlp.vim](https://github.com/kien/ctrlp.vim) - *superseded by ctrlp/ctrlp.vim*         
+- [LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box.git) - *superseded by vimtex*
 </div>
 You might wanna do a `git pull` on some of the plugins inside `.vim/bundle`:
 
@@ -43,7 +48,7 @@ You might wanna do a `git pull` on some of the plugins inside `.vim/bundle`:
 # Some scripts {#scripts}
 
 - [curlwc.sh](https://github.com/murukeshm/scripts/blob/master/curlwc.sh):
-This script uses [curl(1)](http://linux.die.net/man/1/curl) to download the target file in parts. Not very robust.
+This script uses [curl(1)](http://manpages.ubuntu.com/curl.1) to download the target file in parts. Not very robust.
 - [mtcd.sh](https://github.com/murukeshm/scripts/blob/master/mtcd.sh):
 This script mounts all arguments in directories within `~/cdrom` (as ISO9660 images), and also handles unmounting.
 

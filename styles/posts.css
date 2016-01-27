@@ -6,6 +6,7 @@
 
 .post-title a {
 	text-decoration: none;
+	font-size: medium;
 }
 
 kbd {
@@ -27,7 +28,7 @@ img {
 	max-width: 100%;
 }
 
-.tags-list {
+.post-date {
 	text-align: right;
 }
 
@@ -37,6 +38,19 @@ img {
     border-radius: 0.3em;
     font-variant: small-caps;
 	text-decoration: none;
+	font-size: initial;
+}
+
+ol.tags-list {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+ol.tags-list li {
+	list-style: none;
+	list-style-image: none;
+	display: inline-block;
 }
 
 /* 
@@ -81,6 +95,7 @@ pre span.lineno {
 	}
 	.post-title h1 {
 		margin: 0.5em;
+		overflow: auto;
 	}
 }
 

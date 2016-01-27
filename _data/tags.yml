@@ -2,6 +2,10 @@ vim:
     name: Vim
     desc: The One True Editor
 
+linux:
+    name: Linux
+    desc: Thoughts on Linux
+
 config:
     name: Configuration
     desc: COnfiguration of various software that I use
@@ -33,3 +37,7 @@ football:
 tech:
     name: Technology
     desc: Thoughts on Technology
+
+photo:
+    name: Photography
+    desc: Thoughts on Photography
