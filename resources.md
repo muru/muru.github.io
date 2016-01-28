@@ -7,35 +7,36 @@ permalink: /resources/
 
 Currently contains a nifty `vimrc`, and some plugins:
 
-- [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332) 
-- [supertab](https://github.com/ervandew/supertab)
-- [syntastic](https://github.com/scrooloose/syntastic)
-- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
-- [vim-airline](https://github.com/bling/vim-airline)
+- [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
 - [diffchar.vim](https://github.com/vim-scripts/diffchar.vim)
 - [molokai](https://github.com/tomasr/molokai.git)
 - [nerdtree](https://github.com/scrooloose/nerdtree.git)
+- [supertab](https://github.com/ervandew/supertab)
+- [syntastic](https://github.com/scrooloose/syntastic)
 - [tabular](https://github.com/godlygeek/tabular.git)
 - [tagbar](https://github.com/majutsushi/tagbar.git)
+- [vim2hs](https://github.com/dag/vim2hs)
+- [vim-airline](https://github.com/bling/vim-airline)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive.git)
 - [vim-go](https://github.com/fatih/vim-go.git)
 - [vim-markdown](https://github.com/gabrielelana/vim-markdown)
 - [vim-surround](https://github.com/tpope/vim-surround.git)
 - [vimtex](https://github.com/lervag/vimtex)
-- [vim2hs](https://github.com/dag/vim2hs)
+- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
 {: #plugins-list}
 
 Old plugins:
 
-- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git) - replaced with just the `molokai` scheme
+- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git) &mdash;
+ replaced with just the `molokai` scheme
 - [eregex.vim](https://github.com/othree/eregex.vim.git) - didn't use it enough
 - [ctrlp.vim](https://github.com/kien/ctrlp.vim) - superseded by `ctrlp/ctrlp.vim`
 - [LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box.git) - superseded by `vimtex`
 
 You might wanna update some of the plugins inside `.vim/bundle`:
 
-    git submodule update --remote --recursive --init 
+    git submodule update --remote --recursive --init
 
 **Bonus**: My dotfile repos [![gitlab]](https://git.cse.iitb.ac.in/murukesh/home){:.git}
 
@@ -54,8 +55,9 @@ These and more can be found on my scripts repo. [![github]](https://github.com/m
 
 <!-- section -->
 
-# CV {#cv}
-A CV template in LaTeX (modified from one obtained online, original included): [![gitlab]](https://git.cse.iitb.ac.in/murukesh/cv){:.git}
+# CV
+A CV template in LaTeX (modified from one obtained online, original included):
+[![gitlab]](https://git.cse.iitb.ac.in/murukesh/cv){:.git}
 
 - (outdated) tarball: [CV-LaTeX.tar.gz]({{ site.base-url }}/files/CV-LaTeX.tar.gz)
 
