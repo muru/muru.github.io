@@ -10,3 +10,14 @@
 	height: 4em;
 }
 
+a[href^="https://git.cse.iitb.ac.in"] {
+	content: url("../images/gitlab.png");
+	max-height: 1.5em;
+	vertical-align: bottom;
+}
+
+a[href^="https://github.com/murukeshm"]:not([href$=".sh"]) {
+	content: url("../images/github.png");
+	max-height: 1.5em;
+	vertical-align: bottom;
+}
