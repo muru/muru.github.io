@@ -74,8 +74,8 @@ footer img {
 }
 
 #vim-proposal {
-	padding: 1em;
 	text-align: center;
+	padding: 1em;
 }
 
 #vim-proposal img {
@@ -89,7 +89,7 @@ html {
 }
 
 body {
-	font-family: 'Ubuntu Mono', 'Ubuntu', 'Droid Mono', 'Droid', 'Verdana', sans;
+	font-family: 'Ubuntu Mono', 'Ubuntu', 'Roboto', 'Droid Mono', 'Droid', 'Verdana', sans;
 	/*font-size: 16px;*/
 	margin: 0 auto;
 	padding: 0;
@@ -201,8 +201,8 @@ pre code strong {
 
 	#vim-proposal {
 		float: right;
-		height: 15em;
-		max-height: 18vw;
+		width: 16vw;
+		height: 18vw;
 	}
 }
 

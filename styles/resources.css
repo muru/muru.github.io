@@ -1,23 +1,16 @@
-#plugins-list {
-	overflow: auto;
+#plugins-list::after {
+	clear: both;
+	content: "";
+	display: table;
 }
 
 #plugins-list li {
 	float: left;
 	width: 10em;
 }
-#plugins-plugins {
-	height: 4em;
-}
 
-a[href^="https://git.cse.iitb.ac.in"] {
-	content: url("../images/gitlab.png");
-	max-height: 1.5em;
-	vertical-align: bottom;
-}
-
-a[href^="https://github.com/murukeshm"]:not([href$=".sh"]) {
-	content: url("../images/github.png");
-	max-height: 1.5em;
+a[href^="https://git"] img {
+	height: 1.5em;
+	width: 1.5em;
 	vertical-align: bottom;
 }

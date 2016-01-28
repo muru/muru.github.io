@@ -3,9 +3,7 @@ title: Resources
 pagestyle: cann-table
 permalink: /resources/
 ---
-# Vim: `vimrc` and plugins [CSE Git](https://git.cse.iitb.ac.in/murukesh/vimrc) [Github](https://github.com/murukeshm/vimrc) {#vim}
-
-<div markdown="1" id="plugins-list">
+# Vim: `vimrc` and plugins [![gitlab]](https://git.cse.iitb.ac.in/murukesh/vimrc){:.git} [![github]](https://github.com/murukeshm/vimrc){:.git} {#vim}
 
 Currently contains a nifty `vimrc`, and some plugins:
 
@@ -26,8 +24,7 @@ Currently contains a nifty `vimrc`, and some plugins:
 - [vim-surround](https://github.com/tpope/vim-surround.git)
 - [vimtex](https://github.com/lervag/vimtex)
 - [vim2hs](https://github.com/dag/vim2hs)
-
-</div>
+{: #plugins-list}
 
 Old plugins:
 
@@ -40,7 +37,7 @@ You might wanna update some of the plugins inside `.vim/bundle`:
 
     git submodule update --remote --recursive --init 
 
-**Bonus**: My dotfile repos [CSE Git](https://git.cse.iitb.ac.in/murukesh/home)
+**Bonus**: My dotfile repos [![gitlab]](https://git.cse.iitb.ac.in/murukesh/home){:.git}
 
 <!-- section -->
 
@@ -53,12 +50,12 @@ target file in parts. Not very robust.
 This script mounts all arguments in directories within `~/cdrom` (as ISO9660
 images), and also handles unmounting.
 
-These and more can be found on my scripts repo. [Github](https://github.com/murukeshm/scripts)
+These and more can be found on my scripts repo. [![github]](https://github.com/murukeshm/scripts){:.git}
 
 <!-- section -->
 
-# CV [CSE Git](https://git.cse.iitb.ac.in/murukesh/cv) {#cv}
-A CV template in LaTeX (modified from one obtained online, original included):  
+# CV {#cv}
+A CV template in LaTeX (modified from one obtained online, original included): [![gitlab]](https://git.cse.iitb.ac.in/murukesh/cv){:.git}
 
 - (outdated) tarball: [CV-LaTeX.tar.gz]({{ site.base-url }}/files/CV-LaTeX.tar.gz)
 
@@ -77,3 +74,6 @@ without any permission.  Hopefully this will count as personal use. :)
 [cann-table]: http://www.sussex.ac.uk/Users/iane/cannyclubs.php
 [7amkickoff]: http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/
 [epl]: http://www.premierleague.com/en-gb/matchday/league-table.html
+
+[gitlab]: ../images/gitlab.png
+[github]: ../images/github.png
