@@ -145,7 +145,7 @@ section, .section {
 pre code {
 	overflow: auto;
 	display: block;
-	padding: 1em 0.5em;
+	padding: 0.5em;
 	color: whitesmoke;
 	background-color: black;
 }

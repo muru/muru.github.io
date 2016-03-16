@@ -52,7 +52,9 @@ differences per distro are a fact of life and have to be handled, but I'd rather
 not take pains over what I add to it. One obvious solution is to wrap the
 command in `sh -c`:
 
-    MANPAGER='sh -c "col -b | vim -c \'set ft=man nomod nolist ignorecase\' -"'
+```sh
+MANPAGER='sh -c "col -b | vim -c \'set ft=man nomod nolist ignorecase\' -"'
+```
 
 **Ugly.** I also hate having to deal with quoting.
 
@@ -61,8 +63,9 @@ command in `sh -c`:
 At this point, it struck me: Why should I run this via a pipe? Once Vim starts,
 I can perfectly well use `%! col -b` to do the job. So:
 
-    MANPAGER='vim -c "%! col -b" -c "set ft=man nomod nolist ignorecase" -'
-
+```sh
+MANPAGER='vim -c "%! col -b" -c "set ft=man nomod nolist ignorecase" -'
+```
 Nice!
 
 Now, other considerations started popping up. You can easily quite `less` (and
@@ -72,7 +75,9 @@ quit a manpage, you'd have to do `:q!`, not just `:q`. Thankfully, one of the
 options set ([`nomod`][nomod]) tells Vim that the buffer hasn't been modified.
 Therefore, we can just use `:q`:
 
-    nnoremap q :q<CR>
+```vim
+nnoremap q :q<CR>
+```
 
 Other considerations arise:
 
@@ -159,9 +164,9 @@ map <expr> <CR> winnr('$') == 1 ? ':vs<CR><C-]>' : '<C-]>'
 {% endhighlight %}
 
 with:
-
-    MANPAGER="vim -"
-
+```sh
+MANPAGER="vim -"
+```
 Beautiful!
 
 What does this do?
@@ -206,7 +211,7 @@ I have no idea how to suppress the `stdin` message from Vim itself.
 ---
 All told:
 
-[![man in Vim]({{ site.base-url }}/images/vim-man.png)]({{ site.base-url }}/images/vim-man.png)
+[![man in Vim][man-in-vim]][man-in-vim]
 
 ---
 
@@ -223,3 +228,4 @@ have learned quite a bit, which I will write about in another post soon.
  [1]: http://unix.stackexchange.com/a/1853/70524
  [nomod]: http://vimhelp.appspot.com/options.txt.html#%27nomod%27
  [vimenter]: http://vimhelp.appspot.com/autocmd.txt.html#VimEnter
+ [man-in-vim]: {{ site.base-url }}/images/vim-man.png

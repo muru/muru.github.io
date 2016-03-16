@@ -1,19 +1,15 @@
 @import 'code.css';
 
-#post ul li {
-	padding: 0.2em;
-}
-
 .post-title a {
 	text-decoration: none;
-	font-size: medium;
+	font-size: x-large;
 }
 
 kbd {
 	border: solid black 0.05em ;
 	box-shadow: 0 0.1em 0.1em 0.2em rgba(100,100,100,0.75);
     padding: 0.1em 0.5em;
-	border-radius: 0.15em;
+	border-radius: 0.25em;
 	background: #FEFEFE;
 	margin: 0 0.2em;
 }
@@ -32,13 +28,13 @@ img {
 	text-align: right;
 }
 
-.tag {
+a.tag {
     background-color: gainsboro;
     padding: 0.1em 0.5em;
     border-radius: 0.3em;
     font-variant: small-caps;
 	text-decoration: none;
-	font-size: initial;
+	font-size: large;
 }
 
 ol.tags-list {
@@ -57,13 +53,25 @@ ol.tags-list li {
  * From http://drewsilcock.co.uk/proper-linenumbers/
  */
 
-pre {
-    counter-reset: line-numbering;
+.highlight {
+	margin: 0;
+	font-size: 1.2em;
 }
 
-pre span.lineno::after {
-	content: counter(line-numbering, decimal-leading-zero);
-	counter-increment: line-numbering;
+.highlight pre {
+	margin: 0;
+}
+
+.highlight pre code {
+	margin: 0;
+	padding: 0;
+}
+
+.highlight .code, .highlight .gutter {
+	padding: 0.5em;
+}
+
+.highlight .gutter {
 	opacity: 0.4;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -71,15 +79,6 @@ pre span.lineno::after {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	visibility: visible;
-	margin-left: -1em;
-}
-
-pre span.lineno {
-	visibility: collapse;
-	text-align: right;
-	display: inline-block;
-	min-width: 1em;
 }
 
 .comments {
