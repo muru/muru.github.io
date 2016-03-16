@@ -11,7 +11,12 @@
 			{{ page.title }} &ndash; Muru's home page.
 		</title>
 		<link rel="stylesheet" href="{{ site.base-url }}/styles/style.css" type="text/css">
-		<link rel="stylesheet" href="{{ site.base-url }}/styles/{{ layout.pagestyle }}.css" type="text/css">
+		{% if page.pagestyle %}
+			{% assign pagestyle = page.pagestyle %}
+		{% else %}
+			{% assign pagestyle = layout.pagestyle %}
+		{% endif %}
+		<link rel="stylesheet" href="{{ site.base-url }}/styles/{{ pagestyle }}.css" type="text/css">
 		<!-- Web Fonts FTW! -->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
 	</head>
