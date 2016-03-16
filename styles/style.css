@@ -165,6 +165,10 @@ pre code strong {
 	font-size: 1.5em;
 }
 
+img {
+	max-width: 100%;
+}
+
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
 	nav {
 		padding-top: 1%;

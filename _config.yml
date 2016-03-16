@@ -2,7 +2,6 @@ name: Murukesh Mohanan, IIT Bombay
 markdown: kramdown
 base-url: ""
 timezone: Asia/Kolkatta
-highlighter: pygments
 myurl: http://murukesh.me/
 section_separator: "<!-- section -->"
 
