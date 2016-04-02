@@ -26,7 +26,9 @@ Vim `man`'s pager. Why did I submit myself to such cruel and unusual punishment?
 
 The post suggested setting `$MANPAGER` to a combination of `col` and `vim`:
 
-	export MANPAGER="col -b | vim -c 'set ft=man nomod nolist ignorecase' -"
+```sh
+export MANPAGER="col -b | vim -c 'set ft=man nomod nolist ignorecase' -"
+```
 
 For decidedly non-obvious reasons, it's not likely to work for you. Why?
 Because GNU `man` doesn't support piped commands in `$MANPAGER` -- BSD's `man`
@@ -164,8 +166,9 @@ map <expr> <CR> winnr('$') == 1 ? ':vs<CR><C-]>' : '<C-]>'
 {% endhighlight %}
 
 with:
+
 ```sh
-MANPAGER="vim -"
+export MANPAGER="vim -"
 ```
 Beautiful!
 
