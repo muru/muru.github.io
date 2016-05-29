@@ -7,7 +7,7 @@ permalink: /resources/
 
 Currently contains a nifty `vimrc`, and some plugins:
 
-- [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332)
+- [vim-plug](https://github.com/junegunn/vim-plug)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
 - [diffchar.vim](https://github.com/vim-scripts/diffchar.vim)
 - [molokai](https://github.com/tomasr/molokai.git)
@@ -26,19 +26,30 @@ Currently contains a nifty `vimrc`, and some plugins:
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
 {: #plugins-list}
 
+In addition, I'm writing my own plugin for using [Vim as a
+`MANPAGER`](/2015/08/28/vim-for-man.html):
+
+- [vim-manpager](https://github.com/murukesh/vim-manpager)
+
 Old plugins:
 
-- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git) &mdash;
- replaced with just the `molokai` scheme
-- [eregex.vim](https://github.com/othree/eregex.vim.git) - didn't use it enough
-- [ctrlp.vim](https://github.com/kien/ctrlp.vim) - superseded by `ctrlp/ctrlp.vim`
-- [LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box.git) - superseded by `vimtex`
+- [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332): superseded
+  by `vim-plug`
+- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git): replaced
+  with just the `molokai` scheme
+- [eregex.vim](https://github.com/othree/eregex.vim.git): didn't use it enough
+- [ctrlp.vim](https://github.com/kien/ctrlp.vim): superseded by `ctrlp/ctrlp.vim`
+- [LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box.git): superseded by `vimtex`
 
-You might wanna update some of the plugins inside `.vim/bundle`:
+Once cloned to `~/.vim`, do:
 
-    git submodule update --remote --recursive --init
+    vim -c PlugUpdate
 
-**Bonus**: My dotfile repos [![gitlab]](https://git.cse.iitb.ac.in/murukesh/home){:.git}
+And optionally:
+
+    vim -c PlugUpgrade
+
+**Bonus**: My dotfiles repo [![gitlab]](https://git.cse.iitb.ac.in/murukesh/home){:.git}
 
 <!-- section -->
 
@@ -69,11 +80,14 @@ A CV template in LaTeX (modified from one obtained online, original included):
 {% include_relative cann-table.html %}
 </div>
 
-I have followed the banding used by [@7amkickoff][7amkickoff].  This table is
+I have followed the banding used by [@7amkickoff][7amkickoff].  This table was
 updated weekly via a cronjob.  The data is scraped from [the PL site][epl]
 without any permission.  Hopefully this will count as personal use. :)
 
-[cann-table]: http://www.sussex.ac.uk/Users/iane/cannyclubs.php
+Of course, now that this season has ended, I've suspended updates. I'll restart
+on August 14. :smile:
+
+[cann-table]: https://www.sussex.ac.uk/Users/iane/cannyclubs.php
 [7amkickoff]: http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/
 [epl]: http://www.premierleague.com/en-gb/matchday/league-table.html
 

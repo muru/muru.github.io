@@ -18,17 +18,17 @@ pagestyle: posts
 		<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
 			{{ page.date | date: "%B %e, %Y" }}
 		</time>
-		{% if page.tags.size > 0 %}
-		<ol class="tags-list">
-			{% for page_tag in page.tags %}
-				{% assign tag = site.data.tags[page_tag] %}
-				{% if tag %}
-					<li><a class="tag" href="/blog/tag/{{ page_tag }}/">{{ tag.name }}</a></li>
-				{% endif %}
-			{% endfor %}
-		</ol>
-		{% endif %}
 	</h1>
+	{% if page.tags.size > 0 %}
+	<ol class="tags-list">
+		{% for page_tag in page.tags %}
+			{% assign tag = site.data.tags[page_tag] %}
+			{% if tag %}
+				<li><a class="tag" href="/blog/tag/{{ page_tag }}/">{{ tag.name }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ol>
+	{% endif %}
 </header>
 
 {% assign sections = content | split: site.section_separator %}
@@ -40,7 +40,7 @@ pagestyle: posts
 
 <section class="comments">
 <div class="fb-comments" 
-	data-href="{{site.myurl}}{{page.url}}" 
+	data-href="{{site.url}}{{page.url}}" 
 	data-width="100%" 
 	data-numposts="10"
 	data-colorscheme="dark">
@@ -51,7 +51,7 @@ pagestyle: posts
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'muru';
 	var disqus_identifier = '{{ page.url }}';
-	var disqus_url = '{{ site.myurl }}{{ page.url }}';
+	var disqus_url = '{{ site.url }}{{ page.url }}';
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {

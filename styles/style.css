@@ -107,13 +107,13 @@ h3 {
 }*/
 code {
 	font-family: 'Ubuntu Mono', 'Droid Mono', monospace;
-	color: black;
-	background-color: lavender;
+	color: whitesmoke;
+	background-color: #464646;
 	padding: 0.05em 0.2em;
 }
 
 a:link {
-	color: #022;
+	color: #0EE;
 }
 a:visited {
 	color: #1387B4;
@@ -133,13 +133,14 @@ nav ul li {
 }
 
 section, .section {
-	background: white;
-	color: black;
+	background: #122;
+	color: white;
 	box-shadow: 0.1em 0.1em 0.2em 0.1em rgba(128,128,128,0.75);
 	border-radius: 0.5em;
 	margin-bottom: 1em;
 	padding: 1em;
-	text-align: left;
+	text-align: justify;
+	line-height: 1.2em;
 }
 
 pre code {
@@ -148,6 +149,10 @@ pre code {
 	padding: 0.5em;
 	color: whitesmoke;
 	background-color: black;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	font-size: 1.0em;
 }
 
 pre code strong {
@@ -241,7 +246,7 @@ img {
 		width: 85%;
 		font-size: 2em;
 		margin: 2em auto;
-		background-color: whitesmoke;
+		text-align: left;
 	}
 
 	#vim-proposal {

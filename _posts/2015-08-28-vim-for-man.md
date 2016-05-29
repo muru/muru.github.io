@@ -222,13 +222,13 @@ All told:
 
 ## Footnote
 
-This is my first blog post using [Jekyll](http://jekyllrb.com/). Writing it, I
+This is my first blog post using [Jekyll](https://jekyllrb.com/). Writing it, I
 have learned quite a bit, which I will write about in another post soon.
 
  [Unix.SE]: http://unix.stackexchange.com
  [Vim.SE]: http://vi.stackexchange.com
  [man]: http://man7.org/linux/man-pages/man1/man.1.html
  [1]: http://unix.stackexchange.com/a/1853/70524
- [nomod]: http://vimhelp.appspot.com/options.txt.html#%27nomod%27
- [vimenter]: http://vimhelp.appspot.com/autocmd.txt.html#VimEnter
+ [nomod]: https://vimhelp.appspot.com/options.txt.html#%27nomod%27
+ [vimenter]: https://vimhelp.appspot.com/autocmd.txt.html#VimEnter
  [man-in-vim]: {{ site.base-url }}/images/vim-man.png

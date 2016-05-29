@@ -2,3 +2,4 @@ Gemfile.lock
 .*.sw?
 _site/
 _site/**
+.jekyll-metadata

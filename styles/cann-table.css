@@ -3,7 +3,7 @@
 #cann-table {
 	border: 0.1em solid gray;
 	width: 100%;
-	margin: 0.5em;
+	margin: 0.5em auto;
 }
 #cann-table th {
 	padding: 0.5em 1em;

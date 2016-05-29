@@ -1,7 +1,8 @@
 name: Murukesh Mohanan, IIT Bombay
 base-url: ""
 timezone: Asia/Kolkatta
-myurl: http://murukesh.me/
+url: https://murukesh.me
+enforce_ssl: murukesh.me
 section_separator: "<!-- section -->"
 
 gems:
@@ -25,3 +26,5 @@ pages_list:
     Resources: 'resources'
     Blog: 'blog'
     Contact: 'contact'
+
+exclude: [vendor, "Gemfile", "Gemfile.lock"]

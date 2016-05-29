@@ -7,11 +7,12 @@
 
 kbd {
 	border: solid black 0.05em ;
-	box-shadow: 0 0.1em 0.1em 0.2em rgba(100,100,100,0.75);
+	box-shadow: 0 0.05em 0.05em 0.05em rgba(200,200,200,0.75);
     padding: 0.1em 0.5em;
 	border-radius: 0.25em;
 	background: #FEFEFE;
 	margin: 0 0.2em;
+	color: black;
 }
 
 blockquote {
@@ -35,6 +36,7 @@ a.tag {
     font-variant: small-caps;
 	text-decoration: none;
 	font-size: large;
+	color: black;
 }
 
 ol.tags-list {
@@ -79,6 +81,7 @@ ol.tags-list li {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	background-color: #454545;
 }
 
 .comments {
@@ -89,12 +92,12 @@ ol.tags-list li {
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
 	.post-date {
 		float: right;
-		border-left: solid 0.2em black;
+		border-left: solid 0.2em silver;
 		padding-left: 0.5em;
 	}
 	.post-title h1 {
 		margin: 0.5em;
-		overflow: auto;
+		/*overflow: auto;*/
 	}
 }
 

@@ -5,10 +5,11 @@
 	 on Android, uncomment this meta tag. The weird font size 
 	 is due to "font boosting". 
 -->
+		<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 		<meta name="HandheldFriendly" content="true">
 		<meta charset="utf-8">
 		<title>
-			{{ page.title }} &ndash; Muru's home page.
+			{{ page.title }} &ndash; Muru
 		</title>
 		<link rel="stylesheet" href="{{ site.base-url }}/styles/style.css" type="text/css">
 		{% if page.pagestyle %}
@@ -16,7 +17,9 @@
 		{% else %}
 			{% assign pagestyle = layout.pagestyle %}
 		{% endif %}
+		{% if pagestyel %}
 		<link rel="stylesheet" href="{{ site.base-url }}/styles/{{ pagestyle }}.css" type="text/css">
+		{% endif %}
 		<!-- Web Fonts FTW! -->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
 		<meta property="fb:app_id" content="658633094275731"/>

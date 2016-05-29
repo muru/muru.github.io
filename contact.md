@@ -22,5 +22,5 @@ Online:
 
 - [Facebook](https://facebook.com/murukesh)
 - [Google+](https://plus.google.com/+murukeshmohanan/)
-- [Main Blog](http://murukeshm.blogspot.in/)
-- [Second Blog](http://linuxexperiments.blogspot.in/)
+- [Main Blog](https://murukeshm.blogspot.in/)
+- [Second Blog](https://linuxexperiments.blogspot.in/)
