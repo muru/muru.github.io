@@ -20,7 +20,6 @@
   * Chrome browser. Didn't work on a Nexus 4 Opera Mini.
   */
 #main {
-	padding: 1em 2em;
 	/*margin-left: 15%;
 	float: right;
 	display: inline-block;*/
@@ -49,6 +48,11 @@ footer {
 	font-size: 80%;
 	border-top: 0.25em solid white;
 }
+
+footer section {
+	display: flex;
+}
+
 #contact-comment {
 	display: none;
 }
@@ -79,7 +83,6 @@ footer img {
 }
 
 #vim-proposal img {
-	height: 100%;
 	border-radius: 1vw;
 	overflow: hidden;
 }
@@ -123,6 +126,11 @@ a:hover {
 	font-weight: bold;
 }
 
+#title a {
+	text-decoration: none;
+	color: inherit;
+}
+
 ol li {
 	list-style: decimal;
 	padding: 0.3em;
@@ -135,12 +143,15 @@ nav ul li {
 section, .section {
 	background: #122;
 	color: white;
-	box-shadow: 0.1em 0.1em 0.2em 0.1em rgba(128,128,128,0.75);
-	border-radius: 0.5em;
 	margin-bottom: 1em;
 	padding: 1em;
 	text-align: justify;
 	line-height: 1.2em;
+}
+
+section, .section, #vim-proposal img {
+	box-shadow: 0.1em 0.1em 0.2em 0.1em rgba(128,128,128,0.75);
+	border-radius: 0.5em;
 }
 
 pre code {
@@ -174,16 +185,25 @@ img {
 	max-width: 100%;
 }
 
+a.rss {
+	margin-left: auto;
+}
+
+#container {
+	display: flex;
+	align-items: flex-start;
+}
+
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
 	nav {
 		padding-top: 1%;
 		/*	min-height: 42em;
-		display: inline-block;*/
-		float: left;
+		display: inline-block;
+		vertical-align: top;
+		float: left;*/
 		font-size: 1.2em;
 		text-align: right;
 		height: 100%;
-		vertical-align: top;
 		width: 10em;
 		max-width: 18vw;
 	}
@@ -206,27 +226,18 @@ img {
 		max-width: 70vw;
 		min-width: 22em;
 		width: 60%;
-	}
-
-	#vim-proposal {
-		float: right;
-		width: 16vw;
-		height: 18vw;
+		padding: 1em 2em;
 	}
 }
 
 @media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
-
 	#title h1 {
 		margin: 0.2em;
 	}
 
 	nav {
-		width: 90%;
 		/*	min-height: 42em;*/
-		font-size: 2em;
 		text-align: center;
-		margin: 0 auto;
 	}
 	nav ul {
 		padding: 0;
@@ -238,26 +249,28 @@ img {
 		box-shadow: 0.1em 0.1em 0.15em 0.05em rgba(100,100,100,0.75);
 	}
 
-	#main, body {
+	body {
 		text-align: center;
 	}
 
 	section, .section {
-		width: 85%;
-		font-size: 2em;
-		margin: 2em auto;
 		text-align: left;
+		margin-top: 2em;
 	}
 
-	#vim-proposal {
-		height: 100vw;
-		width: 88vw;
+	#main, #vim-proposal, nav {
+		width: 90%;
+		padding: 0 1em;
 		margin: 0 auto;
 	}
 
-	body {
-		font-size: 2.5vw;
+	#vim-proposal img {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		width: 100%;
+	}
+	
+	#container {
+		flex-direction: column;
 	}
 }
-
-

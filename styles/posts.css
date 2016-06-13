@@ -8,7 +8,7 @@
 kbd {
 	border: solid black 0.05em ;
 	box-shadow: 0 0.05em 0.05em 0.05em rgba(200,200,200,0.75);
-    padding: 0.1em 0.5em;
+	padding: 0.1em 0.5em;
 	border-radius: 0.25em;
 	background: #FEFEFE;
 	margin: 0 0.2em;
@@ -21,19 +21,15 @@ blockquote {
 	background-color: whitesmoke;
 }
 
-img {
-	max-width: 100%;
-}
-
 .post-date {
 	text-align: right;
 }
 
 a.tag {
-    background-color: gainsboro;
-    padding: 0.1em 0.5em;
-    border-radius: 0.3em;
-    font-variant: small-caps;
+	background-color: gainsboro;
+	padding: 0.1em 0.5em;
+	border-radius: 0.3em;
+	font-variant: small-caps;
 	text-decoration: none;
 	font-size: large;
 	color: black;
@@ -51,9 +47,9 @@ ol.tags-list li {
 	display: inline-block;
 }
 
-/* 
- * From http://drewsilcock.co.uk/proper-linenumbers/
- */
+/*
+From http://drewsilcock.co.uk/proper-linenumbers/
+*/
 
 .highlight {
 	margin: 0;
@@ -89,24 +85,36 @@ ol.tags-list li {
 	overflow: auto;
 }
 
-.page-links {
+section.page-links {
 	overflow: auto;
+	text-align: center;
+	clear: both;
 }
 
 a.page-prev {
-	float: left;
+	text-align: left;
+	text-overflow: ellipsis;
 }
 
 a.page-next {
-	float: right;
+	text-align: right;
+	text-overflow: '…  ⇨ ';
+}
+
+a.page-prev::before {
+	content: '⇦  ';
+}
+
+a.page-next::after {
+	content: '  ⇨';
 }
 
 a.page-prev, a.page-next {
-	/*border: solid black 0.05em ;
-	box-shadow: 0 0.05em 0.05em 0.05em rgba(200,200,200,0.75);*/
-	background-color: white;
-	color: black;
-	padding: 1em;
+	text-decoration: none;
+	color: silver;
+	font-size: 1.1em;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
@@ -118,6 +126,14 @@ a.page-prev, a.page-next {
 	.post-title h1 {
 		margin: 0.5em;
 		/*overflow: auto;*/
+	}
+	a.page-prev {
+		float: left;
+		width: 30%;
+	}
+	a.page-next {
+		float: right;
+		width: 30%;
 	}
 }
 
@@ -133,5 +149,10 @@ a.page-prev, a.page-next {
 
 	kbd {
 		font-size: small;
+	}
+	a.page-prev, a.page-next {
+		display: block;
+		padding: 0.25em;
+		width: 100%;
 	}
 }

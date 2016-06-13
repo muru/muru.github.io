@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 	<head>
-<!-- If you want to fix the weird fonts on Chrome or Firefox 
-	 on Android, uncomment this meta tag. The weird font size 
-	 is due to "font boosting". 
+<!-- If you want to fix the weird fonts on Chrome or Firefox
+	 on Android, uncomment this meta tag. The weird font size
+	 is due to "font boosting".
 -->
 		<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 		<meta name="HandheldFriendly" content="true">
@@ -25,12 +25,14 @@
 		<meta property="fb:app_id" content="658633094275731"/>
 	</head>
 	<body>
-		<div id="container">
-			<header id="title">
+		<header id="title">
+			<a href="{{ site.base-url }}/">
 				<h1>
 					Murukesh Mohanan
 				</h1>
-			</header>
+			</a>
+		</header>
+		<div id="container">
 			<nav>
 				<ul>
 					{% for page in site.pages_list %}
@@ -42,24 +44,27 @@
 					{% endfor %}
 				</ul>
 			</nav>
-			<div id="vim-proposal"> 
-				<a href="http://vi.stackexchange.com">
-					<img src="https://i.stack.imgur.com/LMMOe.png" alt="Vi and Vim Stack Exchange" />
-				</a>
-			</div>
 			<article id="main">
 
 				{{ content }}
 
 			</article>
+			<div id="vim-proposal">
+				<a href="http://vi.stackexchange.com">
+					<img src="https://i.stack.imgur.com/LMMOe.png" alt="Vi and Vim Stack Exchange" />
+				</a>
+			</div>
 		</div>
 		<footer>
 			<section>
 			<!-- Copyleft FTW! -->
+			<div>
 			<img src="{{ site.base-url }}/images/Copyleft.png" style="height: 1em;" alt="copyleft"> Murukesh Mohanan.
 			<p>Permission to use content is granted under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">the CC BY-SA license</a>.</p>
 			<p>The font used here is the Ubuntu font, via Google Web Fonts.</p>
+			</div>
+			<a class="rss" href="{{ site.base-url }}/feed.xml"><img src="{{ site.base-url }}/images/rss.svg" alt="RSS"></img></a>
 			</section>
-		</footer> 
+		</footer>
 	</body>
 </html>

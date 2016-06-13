@@ -2,14 +2,6 @@
 layout: default
 pagestyle: posts
 ---
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <header class="section post-title">
 	<h1>
 		<a href="{{ site.base-url }}{{ page.url }}">
@@ -38,27 +30,48 @@ pagestyle: posts
 </section>
 {% endfor %}
 
+<section class="page-links">
+{% if page.next.url %}
+<a class="page-prev" href="{{ site.base-url }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+	{{ page.previous.title }}
+</a>
+{% endif %}
+{% if page.next.url %}
+<a class="page-next" href="{{ site.base-url }}{{ page.next.url }}" title="{{ page.next.title }}">
+	{{ page.next.title }}
+</a>
+{% endif %}
+</section>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <section class="comments">
-<div class="fb-comments" 
-	data-href="{{site.url}}{{page.url}}" 
-	data-width="100%" 
+<div class="fb-comments"
+	data-href="{{site.url}}{{page.url}}"
+	data-width="100%"
 	data-numposts="10"
 	data-colorscheme="dark">
 </div>
 <!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'muru';
+	/* * * CONFIGURATION VARIABLES * * */
+	var disqus_shortname = 'muru';
 	var disqus_identifier = '{{ page.url }}';
 	var disqus_url = '{{ site.url }}{{ page.url }}';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+	
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
 </script>
 -->
 <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>

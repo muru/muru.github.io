@@ -8,6 +8,7 @@
 #cann-table th {
 	padding: 0.5em 1em;
 	background-color: #CDCDCD;
+	color: #122;
 	font-size: 0.9em;
 }
 .cann-row-1, .cann-row-2 {
@@ -18,7 +19,6 @@
 	color: #011;
 	margin: 0;
 	height: 2em;
-	font-size: 0.9em;
 }
 .cann-row-2 {
 	background-color: #BCBCBC;
@@ -34,6 +34,7 @@
 .club-name {
 	width: 13em;
 	display: inline-block;
+	font-weight: bolder;
 }
 #cann-gen-note {
 	font-size: 0.6em;
