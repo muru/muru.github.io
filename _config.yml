@@ -22,7 +22,7 @@ defaults:
 
 pages_list:
     About: ''
-    Acads: 'acad'
+    CV: 'cv'
     Resources: 'resources'
     Blog: 'blog'
     Contact: 'contact'
