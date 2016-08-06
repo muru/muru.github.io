@@ -4,20 +4,50 @@ pagestyle: cv
 permalink: /cv/
 ---
 
-# Work
+# 2016 --
+{:.year}
 
-| Organization               | Position  | Years             |
-| -------------------------- | --------- | ----------------- |
-| Yahoo! Japan               | Developer | 2016 &ndash;      |
-| iNautix Technologies India | Developer | 2012 &ndash; 2013 |
-{:.work}
+## Yahoo! Japan
+{:.org}
+
+<details markdown="1">
+- TBC
+</details>
 
 <!-- section -->
 
-# Education
+# 2013 -- 2016
+{:.year}
 
-| Institution  | Degree                 | Field                            | Year | Grade |
-| ------------ | ---------------------- | -------------------------------- | ---- | ----- |
-| IIT Bombay   | Master of Technology   | Computer Science and Engineering | 2016 | 8.15  |
-| IIT Guwahati | Bachelor of Technology | Mechanical Engineering           | 2012 | 6.69  |
-{:.grades}
+## IIT Bombay
+{:.org}
+
+<details markdown="1">
+### Master of Technology
+Computer Science and Engineering
+</details>
+
+<!-- section -->
+
+# 2012 -- 2013
+{:.year}
+
+## iNautix Technologies India Pvt. Ltd.
+{:.org}
+
+<details markdown="1">
+### Senior Application Developer
+</details>
+
+<!-- section -->
+
+# 2008 -- 2012
+{:.year}
+
+## IIT Guwahati
+{:.org}
+
+<details markdown="1">
+### Bachelor of Technology
+Mechanical Engineering
+</details>

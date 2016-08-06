@@ -15,3 +15,60 @@ th {
 td {
 	background-color: #444;
 }
+
+.org, h3 {
+	font-size: 1em;
+}
+
+.org {
+	background-color: #37474F;
+	background-color: #565656;
+}
+
+.year {
+	background-color: #404A52;
+	background-color: #464646;
+}
+
+details {
+	background-color: #434D55;
+	background-color: #666666;
+	flex-grow: 1;
+}
+
+.org, .year, details {
+	margin: 0;
+	padding: 1em;
+}
+
+#main section {
+	padding: 0;
+}
+
+@media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
+	section {
+		display: flex;
+		flex: column;
+	}
+	.org {
+		width: 10em;
+	}
+	.year {
+		width: 6em;
+		border-radius: 0.5em 0 0 0.5em;
+	}
+
+	details {
+		border-radius: 0 0.5em 0.5em 0;
+	}
+}
+@media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
+	.year {
+		font-size: 0.8em;
+		border-radius: 0.5em 0.5em 0 0;
+	}
+
+	details {
+		border-radius: 0 0 0.5em 0.5em;
+	}
+}
