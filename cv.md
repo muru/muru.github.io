@@ -11,7 +11,7 @@ permalink: /cv/
 {:.org}
 
 <details markdown="1">
-- TBC
+- Tokyo, Japan
 </details>
 
 <!-- section -->
@@ -37,6 +37,8 @@ Computer Science and Engineering
 
 <details markdown="1">
 ### Senior Application Developer
+
+- Chennai, India
 </details>
 
 <!-- section -->

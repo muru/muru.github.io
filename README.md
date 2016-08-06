@@ -23,7 +23,7 @@ Or, alternatively:
 ----
 
 The site is written for Jekyll as used by Github Pages, and that is
-installed on mars. The site is updated using:
+installed on mars. The site is updated on www.cse.iitb.ac.in using:
 
 ```sh 
 cd ~/devel/web && 

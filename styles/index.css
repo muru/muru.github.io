@@ -1,0 +1,34 @@
+ul#i18n li {
+	display: inline-block;
+	list-style: none;
+	width: 3em;
+	font-size: 0.7em;
+	background-color: #505050;
+	text-align: center;
+	margin-left: 0;
+	border: 0.05em solid #555555;
+}
+
+#i18n {
+	border-radius: 0.2em;
+	overflow: hidden;
+	display: flex;
+	float: right;
+	box-shadow: inset 0 0 0.1em 0.1em rgba(128,128,128,0.75);
+}
+
+#i18n li.active {
+	box-shadow: 0 0 0.1em 0.1em rgba(16,16,16,0.85);
+	background-color: #606060;
+	z-index: 1000;
+	border-radius: 0.1em;
+	border: 0.1em solid #555555;
+}
+
+.active {
+	display: initial;
+}
+
+.inactive {
+	display: none;
+}
