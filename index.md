@@ -27,10 +27,10 @@ I know English, മലയാളം (Malayalam), हिंदी  (Hindi),	and a 
 
 <!-- section -->
 
-I am an aspiring BOFH. Often called a psycho. Now in my third year of the Master
-of Technology in Computer Science and Engineering course in IIT Bombay, and
-working for the department as an RA in System Administration, I get plenty of
-opportunity to hone my skills. :)
+I am an aspiring BOFH. Often called a psycho. Having completed my third and
+  final year of the Master of Technology in Computer Science and Engineering
+  course in IIT Bombay, and worked for the department as an RA in System
+  Administration, I got plenty of opportunity to hone my skills. :)
 
 <!-- section -->
 

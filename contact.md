@@ -4,10 +4,6 @@ pagestyle: contact
 permalink: /contact/
 ---
 
-Currently at:
-
-- C-227, Hostel 13, IIT Bombay
-
 <!-- section -->
 
 Email me at:

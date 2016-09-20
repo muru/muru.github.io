@@ -84,8 +84,7 @@ I have followed the banding used by [@7amkickoff][7amkickoff].  This table was
 updated weekly via a cronjob.  The data is scraped from [the PL site][epl]
 without any permission.  Hopefully this will count as personal use. :)
 
-Of course, now that this season has ended, I've suspended updates. I'll restart
-on August 14. :smile:
+I need to fix the script now that the PL site has changed. :frown:
 
 [cann-table]: https://www.sussex.ac.uk/Users/iane/cannyclubs.php
 [7amkickoff]: http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/
