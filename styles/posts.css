@@ -18,7 +18,7 @@ kbd {
 blockquote {
 	padding: 0.5em 2em;
 	margin: 0;
-	background-color: whitesmoke;
+	background-color: darkcyan;
 }
 
 .post-date {
@@ -115,6 +115,29 @@ a.page-prev, a.page-next {
 	font-size: 1.1em;
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+.slideshow-wrap {
+	width: 100%;
+	/*padding-bottom: 75%;*/
+	position: relative;
+	text-align: center;
+}
+
+/*
+.slideshow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+*/
+
+.footnotes li {
+	padding: 0;
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
