@@ -2,6 +2,7 @@
 title: Resources
 pagestyle: cann-table
 permalink: /resources/
+description: General stuff
 ---
 # Vim: `vimrc` and plugins [![gitlab]](https://git.cse.iitb.ac.in/murukesh/vimrc){:.git} [![github]](https://github.com/murukeshm/vimrc){:.git} {#vim}
 

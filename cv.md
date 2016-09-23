@@ -2,6 +2,7 @@
 title: CV
 pagestyle: cv
 permalink: /cv/
+description: What have I been upto?
 ---
 
 # 2016 --

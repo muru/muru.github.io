@@ -2,6 +2,7 @@
 title: Contact
 pagestyle: contact
 permalink: /contact/
+description: You can reach me here. :P
 ---
 
 Email me at:
