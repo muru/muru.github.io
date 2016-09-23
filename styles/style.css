@@ -9,10 +9,6 @@
 	color: whitesmoke;
 }
 
-#container {
-	min-height: 80vh;
-}
-
 /** The #main div is given a min-height so that it isn't
   * squished on pages with little content, or for displays
   * that are tall (like phones in portrait mode).
@@ -193,20 +189,9 @@ a.rss {
 	margin-left: auto;
 }
 
-/*
-#container {
-	display: flex;
-	align-items: flex-start;
-}
-*/
-
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
 	nav {
 		padding-top: 1%;
-		/*	min-height: 42em;
-		display: inline-block;
-		vertical-align: top;
-		float: left;*/
 		font-size: 1.2em;
 		text-align: center;
 		height: 100%;
@@ -215,14 +200,8 @@ a.rss {
 	}
 	nav ul {
 		padding: 0;
-		/*border-top: 0.1em solid gray;
-		border-bottom: 0.1em solid gray;
-		border-right: 0.2em solid white;
-		border-radius: 0.3em;*/
 	}
 	nav li {
-		/*border-bottom: 0.1em solid gray;
-		border-right: 0.1em solid gray;*/
 		display: inline-block;
 		width: 6em;
 	}
@@ -235,6 +214,7 @@ a.rss {
 		min-width: 22em;
 		width: 60%;
 		padding: 1em 2em;
+		min-height: 80vh;
 	}
 }
 
@@ -275,9 +255,5 @@ a.rss {
 		margin-top: 1em;
 		margin-bottom: 1em;
 		width: 100%;
-	}
-	
-	#container {
-		flex-direction: column;
 	}
 }
