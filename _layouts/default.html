@@ -27,6 +27,9 @@
 		<!-- Web Fonts FTW! -->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
 		<meta property="fb:app_id" content="658633094275731"/>
+		{% if page.description %}
+			<meta name="description" content="{{ page.description }}">
+		{% endif %}
 	</head>
 	<body>
 		<header id="title">
@@ -36,29 +39,27 @@
 				</h1>
 			</a>
 		</header>
-		<div id="container">
-			<nav>
-				<ul>
-					{% for page in site.pages_list %}
-					<a href="{{ site.base-url }}/{{ page[1] }}#main">
-						<li>
-							{{ page[0] }}
-						</li>
-					</a>
-					{% endfor %}
-				</ul>
-			</nav>
-			<article id="main">
-
-				{{ content }}
-
-			</article>
-			<div id="vim-proposal">
-				<a href="http://vi.stackexchange.com">
-					<img src="https://i.stack.imgur.com/LMMOe.png" alt="Vi and Vim Stack Exchange" />
+		<nav>
+			<ul>
+				{% for page in site.pages_list %}
+				<a href="{{ site.base-url }}/{{ page[1] }}#main">
+					<li>
+						{{ page[0] }}
+					</li>
 				</a>
-			</div>
+				{% endfor %}
+			</ul>
+		</nav>
+		<div id="vim-proposal">
+			<a href="http://vi.stackexchange.com">
+				<img src="https://i.stack.imgur.com/LMMOe.png" alt="Vi and Vim Stack Exchange" />
+			</a>
 		</div>
+		<article id="main">
+
+			{{ content }}
+
+		</article>
 		<footer>
 			<section>
 			<!-- Copyleft FTW! -->
