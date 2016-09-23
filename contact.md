@@ -4,8 +4,6 @@ pagestyle: contact
 permalink: /contact/
 ---
 
-<!-- section -->
-
 Email me at:
 
 - murukesh.mohanan<span class="domain">gmail.com</span>
