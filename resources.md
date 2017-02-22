@@ -71,8 +71,6 @@ These and more can be found on my scripts repo. [![github]](https://github.com/m
 A CV template in LaTeX (modified from one obtained online, original included):
 [![gitlab]](https://git.cse.iitb.ac.in/murukesh/cv){:.git}
 
-- (outdated) tarball: [CV-LaTeX.tar.gz]({{ site.base-url }}/files/CV-LaTeX.tar.gz)
-
 <!-- section -->
 
 # [A Cann Table][cann-table] {#cann}

@@ -1,4 +1,4 @@
-name: Murukesh Mohanan, IIT Bombay
+name: Murukesh Mohanan
 base-url: ""
 timezone: Asia/Kolkatta
 url: https://murukesh.me
@@ -25,7 +25,6 @@ pages_list:
     CV: 'cv'
     Resources: 'resources'
     Blog: 'blog'
-    Contact: 'contact'
 
 exclude: [vendor, "Gemfile", "Gemfile.lock"]
 paginate: 5

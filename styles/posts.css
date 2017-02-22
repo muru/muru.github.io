@@ -98,7 +98,7 @@ a.page-prev {
 
 a.page-next {
 	text-align: right;
-	text-overflow: '…  ⇨ ';
+	/* text-overflow: '…  ⇨ ';*/
 }
 
 a.page-prev::before {
