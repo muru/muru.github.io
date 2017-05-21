@@ -38,7 +38,8 @@ a.tag {
 ol.tags-list {
 	margin: 0;
 	padding: 0;
-	text-align: right;
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 ol.tags-list li {
@@ -141,14 +142,18 @@ a.page-prev, a.page-next {
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
+	.post-title h1 {
+		display: flex;
+		margin: 0;
+		margin-bottom: 0.5em;
+		padding: 0;
+	}
+	.post-title h1>a {
+		flex: 2;
+	}
 	.post-date {
-		float: right;
 		border-left: solid 0.2em silver;
 		padding-left: 0.5em;
-	}
-	.post-title h1 {
-		margin: 0.5em;
-		/*overflow: auto;*/
 	}
 	a.page-prev {
 		float: left;

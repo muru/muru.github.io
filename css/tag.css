@@ -8,3 +8,8 @@ section.post {
 section.post>header>h1>a:link, section.post>header>h1>a:visited {
   color: honeydew;
 }
+
+section.post>header>h1 {
+  padding: 0;
+  margin: 0 0 0.5em 0;
+}
