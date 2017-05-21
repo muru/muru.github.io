@@ -26,6 +26,7 @@ pages_list:
     Resources: 'resources'
     Blog: 'blog'
 
-exclude: [vendor, "Gemfile", "Gemfile.lock"]
+exclude: [vendor, "Gemfile", "Gemfile.lock", "README.md", "LICENSE"]
 paginate: 5
 paginate_path: "/blog/page:num/"
+future: true

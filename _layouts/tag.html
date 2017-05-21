@@ -1,0 +1,43 @@
+---
+title: Tag
+pagestyle: tag
+layout: default
+---
+
+{% assign tag = site.data.tags[page.tag] %}
+<section class="tag-title">
+	<header>
+		<h1>{{ tag.name }}</h1>
+	</header>
+
+	<hr>
+	{{ tag.desc }}
+</section>
+
+{% for post in site.posts %}
+  {% if post.tags contains page.tag %}
+    <section class="post">
+      <header class="post-title">
+        <h1>
+          <a href="{{site.base-url}}{{ post.url }}#main">{{ post.title }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
+            {{ post.date | date: "%B %e, %Y" }}
+          </time>
+          {% if post.tags.size > 0 %}
+          </h1>
+          <ol class="tags-list">
+            {% for post_tag in post.tags %}
+              {% assign tag = site.data.tags[post_tag] %}
+              {% if tag %}
+                <li><a class="tag" href="/blog/tag/{{ post_tag }}/">{{ tag.name }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ol>
+        {% endif %}
+      </header>
+
+      <hr>
+      {{ post.excerpt }}
+    </section>
+  {% endif %}
+{% endfor %}

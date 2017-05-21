@@ -1,0 +1,10 @@
+@import 'posts.css';
+
+section.post {
+  background-color: #8598a2;
+  color: white;
+}
+
+section.post>header>h1>a:link, section.post>header>h1>a:visited {
+  color: honeydew;
+}
