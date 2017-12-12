@@ -54,7 +54,6 @@ From http://drewsilcock.co.uk/proper-linenumbers/
 
 .highlight {
 	margin: 0;
-	font-size: 1.2em;
 }
 
 .highlight pre {
@@ -63,7 +62,6 @@ From http://drewsilcock.co.uk/proper-linenumbers/
 
 .highlight pre code {
 	margin: 0;
-	padding: 0;
 }
 
 .highlight .code, .highlight .gutter {

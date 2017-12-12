@@ -5,7 +5,7 @@ url: https://murukesh.me
 enforce_ssl: murukesh.me
 section_separator: "<!-- section -->"
 
-gems:
+plugins:
   - jekyll-sitemap
   - jemoji
 
