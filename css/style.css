@@ -23,9 +23,9 @@
 }
 
 #main ul li {
-	padding: 0.5em 0;
+	padding: 0.2em 0;
 	margin-left: 0.5em;
-	list-style-image: url("../images/not_sign.png");
+	list-style-image: url('/images/out.png');
 }
 
 #main li.no-marker {
