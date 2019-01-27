@@ -1,0 +1,88 @@
+#main section {
+	width: 60vw;
+	height: 60vw;
+	line-height: initial;
+}
+
+#countdown {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#countdown-numbers {
+	display: inline-block;
+	position: relative;
+	top: 40%;
+	text-align: center;
+}
+
+.days {
+	font-size: 8vw;
+	color: mediumpurple;
+	stroke: mediumpurple;
+}
+
+.hours {
+	font-size: 6vw;
+	color: lawngreen;
+	stroke: lawngreen;
+}
+
+.minutes {
+	font-size: 4vw;
+	color: gold;
+	stroke: gold;
+}
+
+#days {
+	font-size: 8vw;
+}
+
+#hours {
+	font-size: 6vw;
+}
+
+#minutes {
+	font-size: 4vw;
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+	/* stroke-linecap: round; */
+	fill: none;
+}
+
+svg circle.days {
+	stroke-width: 1.2vw;
+}
+
+svg circle.hours {
+	stroke-width: 0.8vw;
+}
+
+svg circle.minutes {
+	stroke-width: 0.5vw;
+}
+
+@media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
+	#main section {
+		width: auto;
+	}
+}
+
+@media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
+	#main section {
+		max-width: 60vw;
+	}
+}
