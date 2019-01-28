@@ -36,7 +36,7 @@ function initializeClock(id, endtime) {
 	var minutesElem = clock.querySelector('#minutes');
 
 	function plural(n, w, wp) {
-		if ((n % 10) == 1) {
+		if (n == 1) {
 			return n + ' ' + w;
 		}
 		return n + ' ' + wp;
