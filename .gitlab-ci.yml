@@ -1,5 +1,5 @@
-# requiring the environment of Ruby > 2.2.5
-image: ruby:2.3
+# jekyll-commonmark requires Ruby version >= 2.4.0.
+image: ruby:2.4
 
 # add bundle cache to 'vendor' for speeding up builds
 cache:
