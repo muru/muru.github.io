@@ -16,23 +16,17 @@ td {
 	background-color: #444;
 }
 
-.org, h3 {
+h1.org {
 	font-size: 1em;
-}
-
-.org {
-	background-color: #37474F;
-	background-color: #565656;
+	background-color: #003c58;
 }
 
 .year {
-	background-color: #404A52;
-	background-color: #464646;
+	background-color: #427594;
 }
 
 details {
-	background-color: #434D55;
-	background-color: #666666;
+	background-color: #295c79;
 	flex-grow: 1;
 }
 
@@ -45,30 +39,38 @@ details {
 	padding: 0;
 }
 
+details>ul>li {
+	list-style: disc !important; 
+}
+
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
 	section {
 		display: flex;
 		flex: column;
+		min-height: 5em;
 	}
 	.org {
-		width: 10em;
+		width: 25%;
+		border-radius: 0.5em 0 0 0.5em;
 	}
 	.year {
-		width: 6em;
-		border-radius: 0.5em 0 0 0.5em;
+		width: 18%;
+		border-radius: 0 0.5em 0.5em 0;
+		font-weight: normal;
+		font-size: inherit;
 	}
 
 	details {
-		border-radius: 0 0.5em 0.5em 0;
+		width: 58%;
 	}
 }
 @media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
 	.year {
 		font-size: 0.8em;
-		border-radius: 0.5em 0.5em 0 0;
+		border-radius: 0 0 0.5em 0.5em;
 	}
 
-	details {
-		border-radius: 0 0 0.5em 0.5em;
+	.org {
+		border-radius: 0.5em 0.5em 0 0;
 	}
 }

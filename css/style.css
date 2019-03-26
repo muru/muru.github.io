@@ -1,11 +1,11 @@
 #title {
-	border-bottom: 0.2em solid white;
+	border-bottom: 0.2em solid grey;
 	padding: 0.1em 3%;
 	font-size: x-large;
 	font-variant: small-caps;
 	text-align: center;
 	min-height: 4em;
-	background-color: lightslategrey;
+	background-color: #0e3c57;
 	color: whitesmoke;
 }
 
@@ -22,12 +22,6 @@
 	margin: 0 auto;
 }
 
-#main ul li {
-	padding: 0.2em 0;
-	margin-left: 0.5em;
-	list-style-image: url('/images/out.png');
-}
-
 #main li.no-marker {
 	list-style: none;
 }
@@ -42,7 +36,7 @@ footer {
 	padding: 2%;
 	padding-bottom: 1%;
 	font-size: 80%;
-	border-top: 0.25em solid white;
+	border-top: 0.25em solid grey;
 }
 
 footer section {
@@ -94,13 +88,13 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	color: #121212;
-	background-color: #B0BEC5; /*#CCCCCC;*/
+	background-color: black; /*#B0BEC5; #CCCCCC;*/
 	width: 100%;
 /*	width: 60em;*/
 	min-height: 100vh;
 }
 h1 {
-	/* margin-bottom: 0.5em; */
+	margin-top: 0;
 }
 /*h1 {
 	font-size: 2em;
@@ -146,11 +140,11 @@ section, .section {
 	margin-bottom: 1em;
 	padding: 1em;
 	text-align: justify;
-	line-height: 1.2em;
+	line-height: 1.4em;
 }
 
 section, .section, #vim-proposal img {
-	box-shadow: 0.1em 0.1em 0.2em 0.1em rgba(128,128,128,0.75);
+	/*box-shadow: 0.1em 0.1em 0.2em 0.1em rgba(128,128,128,0.75);*/
 	border-radius: 0.5em;
 }
 
@@ -187,6 +181,12 @@ img {
 
 a.rss {
 	margin-left: auto;
+}
+
+sup {
+	vertical-align: top;
+	position: relative;
+	top: -0.5em;
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {

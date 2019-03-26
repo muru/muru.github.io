@@ -1,12 +1,8 @@
 @import 'posts.css';
 
-section.post {
-  background-color: #8598a2;
+section.tag-title {
+  background-color: #0a2533;
   color: white;
-}
-
-section.post>header>h1>a:link, section.post>header>h1>a:visited {
-  color: honeydew;
 }
 
 section.post>header>h1 {
