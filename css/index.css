@@ -15,6 +15,8 @@ ul#i18n li {
 	display: flex;
 	float: right;
 	box-shadow: inset 0 0 0.1em 0.1em rgba(128,128,128,0.75);
+	margin: 0 0 0.75em 0.75em;
+	padding: 0;
 }
 
 #i18n li.active {
