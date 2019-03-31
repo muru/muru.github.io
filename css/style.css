@@ -1,7 +1,7 @@
 #title {
 	border-bottom: 0.2em solid grey;
 	padding: 0.1em 3%;
-	font-size: x-large;
+	font-size: 120%;
 	font-variant: small-caps;
 	text-align: center;
 	min-height: 4em;
@@ -9,12 +9,6 @@
 	color: whitesmoke;
 }
 
-/** The #main div is given a min-height so that it isn't
-  * squished on pages with little content, or for displays
-  * that are tall (like phones in portrait mode).
-  * Height obtained by trial-and-error on a Nexus 4
-  * Chrome browser. Didn't work on a Nexus 4 Opera Mini.
-  */
 #main {
 	/*margin-left: 15%;
 	float: right;
@@ -35,7 +29,7 @@ footer {
 	clear: both;
 	padding: 2%;
 	padding-bottom: 1%;
-	font-size: 80%;
+	font-size: 90%;
 	border-top: 0.25em solid grey;
 }
 
@@ -96,12 +90,7 @@ body {
 h1 {
 	margin-top: 0;
 }
-/*h1 {
-	font-size: 2em;
-}
-h3 {
-	margin-top: 0;
-}*/
+
 code {
 	font-family: 'Ubuntu Mono', 'Droid Mono', monospace;
 	color: whitesmoke;
@@ -219,6 +208,10 @@ sup {
 }
 
 @media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
+	body {
+		font-size: 5vw;
+	}
+
 	#title h1 {
 		margin: 0.2em;
 	}
@@ -233,7 +226,6 @@ sup {
 	nav li {
 		list-style: none;
 		margin: 0.2em;
-		box-shadow: 0.1em 0.1em 0.15em 0.05em rgba(100,100,100,0.75);
 	}
 
 	body {
@@ -241,7 +233,7 @@ sup {
 	}
 
 	section, .section {
-		text-align: left;
+		text-align: justify;
 		margin-top: 2em;
 	}
 
@@ -251,9 +243,24 @@ sup {
 		margin: 0 auto;
 	}
 
+	nav ul li {
+		margin-bottom: 0.5em;
+	}
+
 	#vim-proposal img {
 		margin-top: 1em;
 		margin-bottom: 1em;
 		width: 100%;
+	}
+
+	.rss {
+		float: right;
+		text-align: center;
+	}
+
+	footer .rss img {
+		height: 2em;
+		padding-left: 0.5em;
+		padding-bottom: 0.5em;
 	}
 }

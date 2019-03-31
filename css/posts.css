@@ -2,7 +2,7 @@
 
 .post-title a {
 	text-decoration: none;
-	font-size: x-large;
+	font-size: 120%;
 }
 
 kbd {
@@ -40,7 +40,7 @@ a.tag {
 	border-radius: 0.3em;
 	font-variant: small-caps;
 	font-weight: bold;
-	font-size: large;
+	font-size: 110%;
 	color: #e0e0e0;
 }
 
@@ -59,7 +59,7 @@ ol.tags-list li {
 
 /*
 From http://drewsilcock.co.uk/proper-linenumbers/
-*/
+ */
 
 .highlight {
 	margin: 0;
@@ -134,22 +134,22 @@ a.page-prev, a.page-next {
 
 /*
 .slideshow {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
 }
-*/
+ */
 
 .footnotes li {
 	padding: 0;
 }
 
 section>header>h1>a:link, section>header>h1>a:visited {
-  color: aqua;
+	color: aqua;
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
@@ -178,12 +178,13 @@ section>header>h1>a:link, section>header>h1>a:visited {
 
 @media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
 	.post-date {
-		font-size: initial;
+		font-size: 80%;
 		display: block;
 		text-align: right;
 	}
 	.post-title h1 {
 		margin: 0;
+		line-height: 1.4em;
 	}
 
 	kbd {
@@ -193,5 +194,8 @@ section>header>h1>a:link, section>header>h1>a:visited {
 		display: block;
 		padding: 0.25em;
 		width: 100%;
+	}
+	a.tag {
+		font-size: 90%;
 	}
 }
