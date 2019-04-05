@@ -9,7 +9,7 @@ description: General stuff
 Currently contains a nifty `.zshrc`, `vimrc`, and some plugins:
 
 - zsh
-  - [fast-syntax-highlighting](https://github.com/dharma/fast-syntax-highlighting)
+  - [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)
 - vim
   - [vim-plug](https://github.com/junegunn/vim-plug)
   - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
