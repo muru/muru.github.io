@@ -18,7 +18,7 @@ description: What have I been upto?
  - Mentored Yahoo! Japan interns in contributing to OSS in 2017 and 2018
 </details>
 
-## 2016 --
+## 2016 -- 2019
 {:.year}
 
 <!-- section -->

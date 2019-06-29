@@ -37,7 +37,7 @@ Science in IIT Bombay. During the course, I worked for the department as an RA
 in System Administration, and got plenty of opportunity to hone my Linux skills.
 :smile:
 
-Now, at Yahoo! Japan, I do DevOps for the NoSQL team, principally working on
+Then, at Yahoo! Japan, I did DevOps for the NoSQL team, principally working on
 Cassandra.
 
 <!-- section -->
