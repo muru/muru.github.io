@@ -5,7 +5,7 @@ permalink: /cv/
 description: What have I been upto?
 ---
 
-# Yahoo! Japan (Tokyo)
+# Yahoo! JAPAN (Tokyo)
 {:.org}
 
 <details markdown="1">

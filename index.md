@@ -13,15 +13,14 @@ description: Who am I?
 Call me Muru.
 {:.en .active}
 
-ムッラセレル ムルケシュと申します。
+<span lang="ja" class="jp inactive" markdown="1"> ムッラセレル ムルケシュと申します。
 ムルと呼んでください。
-宜しくお願い致します。
-{:.jp .inactive}
+宜しくお願い致します。</span>
 
-എന്റെ പേര മുരുകെഷ് ആണു.
+<span lang="ml" class="ml inactive" markdown="1">എന്റെ പേര മുരുകെഷ് ആണു.
 എന്നെ മുരു എന്നു വിളിക്കുക.
 മലയാളി ആണെങ്കിലും വളര്‍നതു ബോംബെയില്‍ ആണു.
-{:.ml .inactive}
+</span>
 
 I know English, മലയാളം (Malayalam), हिंदी  (Hindi),	and a smattering of 日本語 (Japanese) and मराठी  (Marathi).
 

@@ -30,3 +30,6 @@ exclude: [vendor, "Gemfile", "Gemfile.lock", "README.md", "LICENSE"]
 paginate: 5
 paginate_path: "/blog/page:num/"
 future: true
+
+sass:
+  style: compressed
