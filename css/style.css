@@ -1,18 +1,23 @@
+html {
+	background-color: black; /*#404040;*/
+}
+
 #title {
-	border-bottom: 0.2em solid grey;
 	padding: 0.1em 3%;
 	font-size: 120%;
 	font-variant: small-caps;
 	text-align: center;
 	min-height: 4em;
-	background-color: #0e3c57;
 	color: whitesmoke;
 }
 
+#title h1 {
+	border-bottom: 1px white solid;
+	letter-spacing: 0.1em;
+	margin: 0;
+}
+
 #main {
-	/*margin-left: 15%;
-	float: right;
-	display: inline-block;*/
 	margin: 0 auto;
 }
 
@@ -20,36 +25,27 @@
 	list-style: none;
 }
 
-#main ul {
-	/*margin: 0 0 0.75em 0.75em;
-	padding: 0;*/
-}
-
 footer {
-	clear: both;
-	padding: 2%;
-	padding-bottom: 1%;
 	font-size: 90%;
 	border-top: 0.25em solid grey;
 }
 
-footer section {
+footer.section {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+nav.top-level {
 	display: flex;
+	justify-content: center;
 }
 
-#contact-comment {
-	display: none;
-}
-
-nav li {
-	margin-bottom: 0.1em;
+nav.top-level a {
+	border-radius: 0.3em;
+	margin: 0.5em 1em;;
 	padding: 0.5em 0.5em;
 	background-color: #37474F;
 	color: white;
-	border-radius: 0.3em;
-}
-
-nav a {
 	text-decoration: none;
 }
 
@@ -59,21 +55,6 @@ nav a:visited {
 
 footer img {
 	height: 1em;
-}
-
-#vim-proposal {
-	text-align: center;
-	padding: 1em;
-	float: right;
-}
-
-#vim-proposal img {
-	border-radius: 1vw;
-	overflow: hidden;
-}
-
-html {
-	background-color: black; /*#404040;*/
 }
 
 body {
@@ -86,9 +67,6 @@ body {
 	width: 100%;
 /*	width: 60em;*/
 	min-height: 100vh;
-}
-h1 {
-	margin-top: 0;
 }
 
 code {
@@ -179,22 +157,28 @@ sup {
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
+	#title h1 {
+		display: inline-flex;
+		align-items: center;
+		max-height: 3em;
+		padding: 0 1em;
+	}
+	#title h1 a {
+		margin: 0.5em;
+	}
+	img#face {
+		padding-top: 1em;
+		height: 3.5em;
+	}
 	nav {
-		padding-top: 1%;
 		font-size: 1.2em;
 		text-align: center;
 		height: 100%;
-		/*width: 10em;
-		max-width: 18vw;*/
 	}
-	nav ul {
-		padding: 0;
-	}
-	nav li {
-		display: inline-block;
+	nav a {
 		width: 6em;
 	}
-	nav li:hover {
+	nav a:hover {
 		box-shadow: 0.1em 0.1em 0.15em 0.05em rgba(100,100,100,0.75);
 	}
 
@@ -210,30 +194,25 @@ sup {
 @media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
 	body {
 		font-size: 5vw;
+		text-align: center;
 	}
 
 	#title h1 {
 		margin: 0.2em;
+		padding-bottom: 0.5em;
 	}
 
 	nav {
-		/*	min-height: 42em;*/
+		flex-direction: column;
 		text-align: center;
-	}
-	nav ul {
-		padding: 0;
-	}
-	nav li {
-		list-style: none;
-		margin: 0.2em;
 	}
 
-	body {
-		text-align: center;
+	nav.top-level a {
+		margin-bottom: 0;
 	}
 
 	section, .section {
-		text-align: justify;
+		text-align: left;
 		margin-top: 2em;
 	}
 
@@ -241,16 +220,6 @@ sup {
 		width: 90%;
 		padding: 0 1em;
 		margin: 0 auto;
-	}
-
-	nav ul li {
-		margin-bottom: 0.5em;
-	}
-
-	#vim-proposal img {
-		margin-top: 1em;
-		margin-bottom: 1em;
-		width: 100%;
 	}
 
 	.rss {

@@ -1,8 +1,8 @@
 name: Murukesh Mohanan
 base-url: ""
 timezone: Asia/Kolkatta
-url: https://murukesh.me
-enforce_ssl: murukesh.me
+url: https://muru.dev
+enforce_ssl: muru.dev
 section_separator: "<!-- section -->"
 
 plugins:

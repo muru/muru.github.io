@@ -93,27 +93,31 @@ From http://drewsilcock.co.uk/proper-linenumbers/
 	overflow: auto;
 }
 
-section.page-links {
+nav.page-links {
 	overflow: auto;
 	text-align: center;
-	clear: both;
+	display: flex;
+	justify-content: space-between;
 }
 
 a.page-prev {
 	text-align: left;
 	text-overflow: ellipsis;
+	flex-grow: 1;
 }
 
 a.page-next {
 	text-align: right;
+	text-overflow: ellipsis;
+	flex-grow: 1;
 	/* text-overflow: '…  ⇨ ';*/
 }
 
-a.page-prev::before {
+span.prev::before {
 	content: '⇦  ';
 }
 
-a.page-next::after {
+span.next::after {
 	content: '  ⇨';
 }
 
@@ -122,7 +126,6 @@ a.page-prev, a.page-next {
 	color: silver;
 	font-size: 1.1em;
 	white-space: nowrap;
-	overflow: hidden;
 }
 
 .slideshow-wrap {
@@ -148,8 +151,9 @@ width: 100%;
 	padding: 0;
 }
 
-section>header>h1>a:link, section>header>h1>a:visited {
+header>h1>a:link, header>h1>a:visited {
 	color: aqua;
+	text-align: left;
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
