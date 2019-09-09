@@ -5,6 +5,21 @@ permalink: /cv/
 description: What have I been upto?
 ---
 
+# NABLAS (Tokyo)
+{:.org}
+
+<details markdown="1">
+<summary>Software Engineer</summary>
+ - Development of v2 of e-learning platform (iLect)
+ - Setup and administration of office network (VPN, DNS, DHCP, LDAP)
+ - Setup of office computing cluster (JupyterHub)
+ - Platform development for ML research teams
+</details>
+
+## 2019 --
+{:.year}
+
+<!-- section -->
 # Yahoo! JAPAN (Tokyo)
 {:.org}
 
