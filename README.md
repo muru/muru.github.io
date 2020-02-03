@@ -1,12 +1,16 @@
-The site is written for Jekyll as used by Github Pages, and that is installed
-on mars. The site used to be updated on www.cse.iitb.ac.in using:
+The site is written for Jekyll as used by GitHub Pages,  but is served using
+Gitlab.
+
+# Historical notes.
+
+The site used to be updated on www.cse.iitb.ac.in using:
 
 ```sh 
 cd ~/devel/web && 
   /usr/local/bin/jekyll build -d /users/pg13/murukesh/public_html -w --config _config.yml,_sitename.yml
 ```
 
-Now, I just rely on Gitlab. The CSE homepage redirects to my main site using a
+Now, the CSE homepage redirects to my main site using a
 simple `.htaccess`:
 
     Redirect 301 /~murukesh/ https://murukesh.me/
