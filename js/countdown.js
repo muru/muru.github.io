@@ -1,5 +1,5 @@
-function getTimeSince(starttime) {
-	var t = Date.parse(new Date()) - Date.parse(starttime);
+function getTimeSince(startTime) {
+	var t = Date.parse(new Date()) - Date.parse(startTime);
 	var seconds = Math.floor((t / 1000) % 60);
 	var minutes = Math.floor((t / 1000 / 60) % 60);
 	var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -31,7 +31,7 @@ function updateArc(id, value, max) {
 	elem.setAttribute("stroke-dasharray", barLength + " " + circumference);
 }
 
-function initializeClock(id, endtime) {
+function initializeClock(id, startTime) {
 	var clock = document.getElementById(id);
 	var daysElem = clock.querySelector('#days');
 	var hoursElem = clock.querySelector('#hours');
@@ -45,7 +45,7 @@ function initializeClock(id, endtime) {
 	}
 
 	function updateClock() {
-		var t = getTimeRemaining(endtime);
+		var t = getTimeSince(startTime);
 
 		daysElem.innerHTML = plural(t.days, 'day', 'days');
 		hoursElem.innerHTML = plural(t.hours, 'hour', 'hours');
