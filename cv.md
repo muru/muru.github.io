@@ -10,9 +10,9 @@ description: What have I been upto?
 
 <details markdown="1">
 <summary>Software Engineer</summary>
- - Development of v2 of e-learning platform (iLect)
+ - Development of v2 of e-learning platform (VueJS, Flask, GCP)
  - Setup and administration of office network (VPN, DNS, DHCP, LDAP)
- - Setup of office computing cluster (JupyterHub)
+ - Setup of office computing cluster (JupyterHub, Docker Swarm, NVIDIA DGX Stations)
  - Platform development for ML research teams
 </details>
 
