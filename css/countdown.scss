@@ -39,6 +39,11 @@
 	stroke: gold;
 }
 
+.seconds {
+	color: silver;
+	stroke: silver;
+}
+
 #days {
 	font-size: 8vw;
 }
@@ -65,16 +70,24 @@ svg circle {
 	fill: none;
 }
 
+svg circle.years {
+	stroke-width: 1.6%;
+}
+
 svg circle.days {
-	stroke-width: 1.2vw;
+	stroke-width: 1.2%;
 }
 
 svg circle.hours {
-	stroke-width: 0.8vw;
+	stroke-width: 0.8%;
 }
 
 svg circle.minutes {
-	stroke-width: 0.5vw;
+	stroke-width: 0.6%;
+}
+
+svg circle.seconds {
+	stroke-width: 0.4%;
 }
 
 @media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {

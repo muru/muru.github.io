@@ -1,6 +1,6 @@
 function getTimeSince(startTime) {
 	var t = new Date() - startTime;
-	var seconds = Math.floor((t / 1000) % 60);
+	var seconds = (t / 1000 % 60);
 	var minutes = Math.floor((t / 1000 / 60) % 60);
 	var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
 	var days = Math.floor(t / (1000 * 60 * 60 * 24) % 365);
@@ -31,39 +31,42 @@ function updateArc(id, value, max) {
 	elem.setAttribute("stroke-dasharray", barLength + " " + circumference);
 }
 
+function plural(n, w, wp) {
+	if (n == 0) {
+		return '';
+	}
+	if (n == 1) {
+		return n + ' ' + w;
+	}
+	return n + ' ' + wp;
+}
+
 function initializeClock(id, startTime) {
 	var clock = document.getElementById(id);
+	var yearsElem = clock.querySelector('#years');
 	var daysElem = clock.querySelector('#days');
 	var hoursElem = clock.querySelector('#hours');
 	var minutesElem = clock.querySelector('#minutes');
 
-	function plural(n, w, wp) {
-		if (n == 0) {
-			return '';
-		}
-		if (n == 1) {
-			return n + ' ' + w;
-		}
-		return n + ' ' + wp;
-	}
-
 	function updateClock() {
 		var t = getTimeSince(startTime);
 
-		yearsElem.innerHTML = plural(t.years, 'year', 'years');
-		daysElem.innerHTML = plural(t.days, 'day', 'days');
-		hoursElem.innerHTML = plural(t.hours, 'hour', 'hours');
-		minutesElem.innerHTML = ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
-
+		secLength = t.seconds;
 		minLength = t.minutes + t.seconds/60;
 		hrLength = t.hours + minLength/60;
 		dayLength = t.days + hrLength/24;
 		yearLength = t.years + t.days/365;
 
-		updateArc("yeararc", dayLength, 365);
+		yearsElem.innerHTML = plural(t.years, 'year', 'years');
+		daysElem.innerHTML = plural(t.days, 'day', 'days');
+		hoursElem.innerHTML = plural(t.hours, 'hour', 'hours');
+		minutesElem.innerHTML = ('0' + t.minutes).slice(-2) + ':' + ('0' + Math.floor(t.seconds)).slice(-2);
+
+		updateArc("yeararc", yearLength, 100);
 		updateArc("dayarc", dayLength, 365);
 		updateArc("hourarc", hrLength, 24);
 		updateArc("minarc", minLength, 60);
+		updateArc("secarc", secLength, 60);
 
 		if (t.total <= 0) {
 			clearInterval(timeinterval);
@@ -71,7 +74,7 @@ function initializeClock(id, startTime) {
 	}
 
 	updateClock();
-	var timeinterval = setInterval(updateClock, 1000);
+	var timeinterval = setInterval(updateClock, 100);
 }
 
 var deadline = new Date('2019-12-22T08:40+0530');
