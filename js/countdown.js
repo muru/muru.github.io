@@ -1,5 +1,5 @@
 function getTimeSince(startTime) {
-	var t = Date.parse(new Date()) - Date.parse(startTime);
+	var t = new Date() - startTime;
 	var seconds = Math.floor((t / 1000) % 60);
 	var minutes = Math.floor((t / 1000 / 60) % 60);
 	var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -38,6 +38,9 @@ function initializeClock(id, startTime) {
 	var minutesElem = clock.querySelector('#minutes');
 
 	function plural(n, w, wp) {
+		if (n == 0) {
+			return '';
+		}
 		if (n == 1) {
 			return n + ' ' + w;
 		}
@@ -47,6 +50,7 @@ function initializeClock(id, startTime) {
 	function updateClock() {
 		var t = getTimeSince(startTime);
 
+		yearsElem.innerHTML = plural(t.years, 'year', 'years');
 		daysElem.innerHTML = plural(t.days, 'day', 'days');
 		hoursElem.innerHTML = plural(t.hours, 'hour', 'hours');
 		minutesElem.innerHTML = ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
@@ -54,7 +58,9 @@ function initializeClock(id, startTime) {
 		minLength = t.minutes + t.seconds/60;
 		hrLength = t.hours + minLength/60;
 		dayLength = t.days + hrLength/24;
+		yearLength = t.years + t.days/365;
 
+		updateArc("yeararc", dayLength, 365);
 		updateArc("dayarc", dayLength, 365);
 		updateArc("hourarc", hrLength, 24);
 		updateArc("minarc", minLength, 60);
@@ -68,7 +74,7 @@ function initializeClock(id, startTime) {
 	var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date('2019-12-22 08:40 +5:30');
+var deadline = new Date('2019-12-22T08:40+0530');
 document.addEventListener("DOMContentLoaded", function(event) {
 	initializeClock('countdown', deadline);
 });
