@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Poking around a Pi, Part II: VPNs and Network Namespaces'
+title: 'Poking around a Pi: Part II'
+subtitle: 'VPNs and Network Namespaces'
 tags: [tech, linux]
 description: Using a VPN only for a select group of applications
 
@@ -71,7 +72,7 @@ What do these commands do? Let's examine them block by block.
 
 1. Set up the namespace and enter it:
 
-    ```
+    ```sh
     NS_NAME=vpn
     ip netns add "$NS_NAME"
     ip netns exec "$SHELL"
@@ -112,7 +113,7 @@ What do these commands do? Let's examine them block by block.
 6. Enable IPv4 forwarding using `sysctl`
 
     ```
-    sudo sysctl -w net.ipv4.ip_forward=1
+    sysctl -w net.ipv4.ip_forward=1
     ```
 
 Then run OpenVPN in this network namespace (for example, by running the `openvpn` command itself here, or by using
@@ -175,10 +176,11 @@ OpenVPN client.
 
 A similar drop-in override can be used for other services (e.g., Kodi or a desktop session).
 
-**Note:** this doesn't protect against the VPN dying and leaving your services directly connected via your network. I
+This doesn't protect against the VPN dying and leaving your services directly connected via your network. I
 think that can be bluntly handled by having an `ExecStopPost` for the OpenVPN client which removes the default route
 altogether (and correspondingly have an `ExecStartPre` set up the default route instead of setting it in the one-shot
 service).
+{: .danger}
 
 
 [tb-linux]: https://www.tunnelbear.com/blog/linux_support/

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Arch on Alienware - scratching itches
+title: 'Arch on Alienware: Part II'
+subtitle: Scratching itches
 tags: [tech, linux]
 ---
 
@@ -8,16 +9,16 @@ So, it's been [half a year since][alien] I got the Alienware Aurora R7, and I
 have had my fair share of bugs and annoyances. Today, I'll talk about a few of
 those.
 
+<!-- section -->
+
 <aside markdown="1">
 
 > Every good work of software starts by scratching a developer's personal itch.
 
-[*The Cathedral and the Bazaar*][esr], Eric S. Raymond.
+&mdash; [*The Cathedral and the Bazaar*][esr],  
+Eric S. Raymond.
 
 </aside>
-
-
-<!-- section -->
 
 # Shutting down
 
