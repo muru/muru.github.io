@@ -6,12 +6,12 @@ layout: default
 
 {% assign tag = site.data.tags[page.tag] %}
 <section class="tag-title">
-	<header>
-		<h1>Tag: {{ tag.name }}</h1>
-	</header>
+  <header>
+    <h1>Tag: {{ tag.name }}</h1>
+  </header>
 
-	<hr>
-	{{ tag.desc }}
+  <hr>
+  {{ tag.desc }}
 </section>
 
 {% for post in site.posts %}
@@ -20,11 +20,16 @@ layout: default
       <header class="post-title">
         <h1>
           <a href="{{site.base-url}}{{ post.url }}#main">{{ post.title }}</a>
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
-            {{ post.date | date: "%B %e, %Y" }}
-          </time>
-          {% if post.tags.size > 0 %}
-          </h1>
+        </h1>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
+          {{ post.date | date: "%B %e, %Y" }}
+        </time>
+        {% if post.subtitle %}
+        <h2>
+          {{ post.subtitle }}
+        </h2>
+        {% endif %}
+        {% if post.tags.size > 0 %}
           <ol class="tags-list">
             {% for post_tag in post.tags %}
               {% assign tag = site.data.tags[post_tag] %}
