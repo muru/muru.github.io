@@ -2,24 +2,19 @@
 title: About Me
 pagestyle: index
 script: index
-description: Who am I?
+description: Call me Muru.
 ---
 
 - {:#en .active} En
-- {:#ml} മ
 - {:#jp} 日
 {:#i18n}
 
 Call me Muru.
 {:.en .active}
-
-<span lang="ja" class="jp inactive" markdown="1"> ムッラセレル ムルケシュと申します。
+<span lang="ja" markdown="1"> ムッラセレル ムルケシュと申します。
 ムルと呼んでください。
 宜しくお願い致します。</span>
-
-<span lang="ml" class="ml inactive" markdown="1">
-എന്റെ പേര് മുരുകേഷ്. എന്നെ മുരു എന്ന് വിളിക്കൂ..
-</span>
+{: .jp .inactive}
 
 I know English, മലയാളം (Malayalam), हिंदी  (Hindi),	日本語 (Japanese) and a smattering of  मराठी  (Marathi).
 
