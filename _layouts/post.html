@@ -7,10 +7,15 @@ pagestyle: posts
 		<a href="{{ site.base-url }}{{ page.url }}">
 			{{ page.title }}
 		</a>
-		<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
-			{{ page.date | date: "%B %e, %Y" }}
-		</time>
 	</h1>
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
+		{{ page.date | date: "%B %e, %Y" }}
+	</time>
+	{% if page.subtitle %}
+	<h2>
+		{{ page.subtitle }}
+	</h2>
+	{% endif %}
 	{% if page.tags.size > 0 %}
 	<ol class="tags-list">
 		{% for page_tag in page.tags %}
@@ -33,12 +38,12 @@ pagestyle: posts
 <nav class="page-links section">
 {% if page.previous %}
 <a class="page-prev" href="{{ site.base-url }}{{ page.previous.url }}" title="{{ page.previous.title }}">
-	<span class="prev"></span>{{ page.previous.title | truncate: 25 }}
+	<span class="prev"></span>{{ page.previous.title | truncate: 30 }}
 </a>
 {% endif %}
 {% if page.next %}
 <a class="page-next" href="{{ site.base-url }}{{ page.next.url }}" title="{{ page.next.title }}">
-	{{ page.next.title | truncate: 25 }}<span class="next"></span>
+	{{ page.next.title | truncate: 30 }}<span class="next"></span>
 </a>
 {% endif %}
 </nav>
