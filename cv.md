@@ -10,7 +10,7 @@ description: What have I been upto?
 
 <details markdown="1">
 <summary>Software Engineer</summary>
- - Development of v2 of e-learning platform (VueJS, Flask, GCP)
+ - Development of v2 of e-learning platform (VueJS, Flask, Kubernetes, GCP)
  - Setup and administration of office network (VPN, DNS, DHCP, LDAP)
  - Setup of office computing cluster (JupyterHub, Docker Swarm, NVIDIA DGX Stations)
  - Platform development for ML research teams
@@ -54,13 +54,13 @@ description: What have I been upto?
 ## 2013 -- 2016
 {:.year}
 
-<!-- section -->
+---
 
 # IIT Bombay
 {:.org}
 
 <details markdown="1">
-<summary>M.Tech (Computer Science)</summary>
+<summary>M.Tech. (Computer Science)</summary>
 - CPI: 8.37
 - M.Tech. Project: **RSA: Side-Channel Attacks**
 </details>
@@ -95,6 +95,6 @@ description: What have I been upto?
 ## 2008 -- 2012
 {:.year}
 
----
+<!-- section -->
 
-A print-friendly CV is at <https://murukesh.gitlab.io/cv/>.
+- A print-friendly CV is at <https://murukesh.gitlab.io/cv/>.

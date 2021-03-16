@@ -3,3 +3,4 @@ Gemfile.lock
 _site/
 _site/**
 .jekyll-metadata
+vendor
