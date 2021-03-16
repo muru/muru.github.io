@@ -10,39 +10,25 @@ Currently contains a nifty `.zshrc`, `vimrc`, and some plugins:
 
 - zsh
   - [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)
+  - [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - vim
   - [vim-plug](https://github.com/junegunn/vim-plug)
   - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
-  - [diffchar.vim](https://github.com/vim-scripts/diffchar.vim)
   - [molokai](https://github.com/tomasr/molokai.git)
   - [nerdtree](https://github.com/scrooloose/nerdtree.git)
   - [supertab](https://github.com/ervandew/supertab)
   - [syntastic](https://github.com/scrooloose/syntastic)
   - [tabular](https://github.com/godlygeek/tabular.git)
-  - [tagbar](https://github.com/majutsushi/tagbar.git)
-  - [vim2hs](https://github.com/dag/vim2hs)
   - [vim-airline](https://github.com/bling/vim-airline)
   - [vim-fugitive](https://github.com/tpope/vim-fugitive.git)
   - [vim-go](https://github.com/fatih/vim-go.git)
   - [vim-markdown](https://github.com/gabrielelana/vim-markdown)
   - [vim-surround](https://github.com/tpope/vim-surround.git)
-  - [vimtex](https://github.com/lervag/vimtex)
-  - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
+  - and others &hellip;
   {: #plugins-list}
 
 In addition, I wrote my own plugin for using [Vim as a
 `MANPAGER`](/2015/08/28/vim-for-man.html): [vim-manpager](https://github.com/muru/vim-manpager).
-
-Old plugins:
-
-- [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332): superseded
-  by `vim-plug`
-- [vim-colorschemes](https://github.com/flazz/vim-colorschemes.git): replaced
-  with just the `molokai` scheme
-- [eregex.vim](https://github.com/othree/eregex.vim.git): didn't use it enough
-- [ctrlp.vim](https://github.com/kien/ctrlp.vim): superseded by `ctrlp/ctrlp.vim`
-- [LaTeX-Box](https://github.com/LaTeX-Box-Team/LaTeX-Box.git): superseded by `vimtex`
-
 
 Setting up usually goes:
 
@@ -63,20 +49,13 @@ The `.vim` used to be in a separate repo, then I merged it into home.
 
 # Some scripts {#scripts}
 
-- [`curlwc.sh`](https://github.com/muru/scripts/blob/master/curlwc.sh):
-This script uses [curl(1)](http://manpages.ubuntu.com/curl.1) to download the
-target file in parts. Not very robust.
-- [`mtcd.sh`](https://github.com/muru/scripts/blob/master/mtcd.sh):
-This script mounts all arguments in directories within `~/cdrom` (as ISO9660
-images), and also handles unmounting.
-
-These and more can be found on my scripts repo. [![github]](https://github.com/muru/scripts){:.git}
+Some utility scripts I wrote can be found on my scripts repo. [![github]](https://github.com/muru/scripts){:.git}
 
 <!-- section -->
 
 # CV
-A CV template in LaTeX (modified from one obtained online, original included):
-[![gitlab]](https://git.cse.iitb.ac.in/murukesh/cv){:.git}
+A CV template in LaTeX (modified from one obtained online), then re-written in Markdown:
+[![gitlab]](https://gitlab.com/murukesh/cv){:.git}
 
 <!-- section -->
 

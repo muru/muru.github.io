@@ -94,3 +94,7 @@ description: What have I been upto?
 
 ## 2008 -- 2012
 {:.year}
+
+---
+
+A print-friendly CV is at <https://murukesh.gitlab.io/cv/>.
