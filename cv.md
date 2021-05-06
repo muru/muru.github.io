@@ -5,6 +5,18 @@ permalink: /cv/
 description: What have I been upto?
 ---
 
+# Paidy (Tokyo)
+{:.org}
+
+<details markdown="1">
+<summary>Platform Engineer</summary>
+</details>
+
+## 2021 --
+{:.year}
+
+<!-- section -->
+
 # NABLAS (Tokyo)
 {:.org}
 
@@ -16,7 +28,7 @@ description: What have I been upto?
  - Platform development for ML research teams
 </details>
 
-## 2019 --
+## 2019 -- 2021
 {:.year}
 
 <!-- section -->

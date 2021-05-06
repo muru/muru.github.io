@@ -64,7 +64,7 @@ I haven't really kitted up: I have a Nikon D5300 and a 2016 Giant Contend 2.
 
 <!-- section -->
 
-I am a Gooner. Favourite players include "Mad Jens" Lehmann, Dennis Bergkamp
+I am a Gooner. Favourite players include Dennis Bergkamp, Santi Cazorla,
 and Wojciech Szczęsny.  I have been an Arsenal fan since the Champions League
 final in Paris, 2006. (Yes, I never got to enjoy the peak of the Wenger era.)
 Even so, there's only one. Arsène. Wenger.
