@@ -9,13 +9,13 @@ description: General stuff
 Currently contains a nifty `.zshrc`, `vimrc`, and some plugins:
 
 - zsh
+  - [grml](https://grml.org/zsh/grmlzshrc.html) (not a plugin *per se*)
   - [zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)
   - [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - vim
   - [vim-plug](https://github.com/junegunn/vim-plug)
   - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
   - [molokai](https://github.com/tomasr/molokai.git)
-  - [nerdtree](https://github.com/scrooloose/nerdtree.git)
   - [supertab](https://github.com/ervandew/supertab)
   - [syntastic](https://github.com/scrooloose/syntastic)
   - [tabular](https://github.com/godlygeek/tabular.git)
@@ -65,9 +65,9 @@ A CV template in LaTeX (modified from one obtained online), then re-written in M
 {% include_relative cann-table.html %}
 </div>
 
-I have followed the banding used by [@7amkickoff][7amkickoff].  This table was
-updated weekly via a cronjob.  The data is scraped from [the PL site][epl]
-without any permission.  Hopefully this will count as personal use. :)
+I have followed the banding used by [@7amkickoff][7amkickoff].  This table will
+be updated during the season. The data is scraped from [the PL site][epl]
+without any permission. Hopefully this will count as personal use. :)
 
 [cann-table]: https://www.sussex.ac.uk/Users/iane/cannyclubs.php
 [7amkickoff]: http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/

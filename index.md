@@ -31,10 +31,10 @@ in System Administration, and got plenty of opportunity to hone my Linux skills.
 :smile:
 
 Then, at Yahoo! Japan, I did DevOps for the NoSQL team, principally working on
-Cassandra.
+Cassandra. After Y!J, I moved to a small startup, NABLAS, where I did a bit of
+everything: system administration, DevOps, software engineering.
 
-Currently, at NABLAS, I do a bit of everything: system administration, DevOps,
-software engineering, and when I get the time, I study deep learning.
+Now, I am at Paidy, where I work as a Platform Engineer.
 
 <!-- section -->
 
@@ -49,18 +49,18 @@ Lately, I don't post that much.
 I share the hobby of the masses - reading. Favourite books
 include:
 
-- *The Green Mile*,
+- Stephen King's *The Green Mile*,
 - Robert Jordan's *The Wheel of Time* series,
-- Asimov's *Foundation* series (expanded by the Galactic Empire series and Robot novels),
-- Clarke's *Rama* series,
-- Stephenson's *Anathem*,
-- Sanderson's *Stormlight Archive*
+- Isaac Asimov's *Foundation* series (expanded by the Galactic Empire and Robot novels),
+- Arthur C. Clarke's *Rama* series,
+- Neal Stephenson's *Anathem*,
+- Brandon Sanderson's *Stormlight Archive*
 
 I took up photography in IIT Bombay and cycling after I moved to Japan.
 Photography is my driving passion when it comes to the outdoors: when I travel
 for fun, I travel to photograph. That's why I like cycling - it affords more
 opportunities to capture visuals than racing past in a bike or a car does.
-I haven't really kitted up: I have a Nikon D5300 and a 2016 Giant Contend 2.
+I haven't really kitted up: I have a Nikon D5300 and a [2017 Giant Contend 2][contend].
 
 <!-- section -->
 
@@ -68,3 +68,5 @@ I am a Gooner. Favourite players include Dennis Bergkamp, Santi Cazorla,
 and Wojciech Szczęsny.  I have been an Arsenal fan since the Champions League
 final in Paris, 2006. (Yes, I never got to enjoy the peak of the Wenger era.)
 Even so, there's only one. Arsène. Wenger.
+
+[contend]: https://www.giant.co.jp/giant16/bike_datail.php?p_id=00000133
