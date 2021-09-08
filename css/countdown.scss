@@ -1,103 +1,90 @@
 ---
 ---
 #main section {
-	width: 60vw;
-	height: 60vw;
-	line-height: initial;
+  width: 60vw;
+  height: 60vw;
+  line-height: initial;
 }
 
 #countdown {
-	position: relative;
-	margin: auto;
-	text-align: center;
-	width: 100%;
-	height: 100%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 #countdown-numbers {
-	display: inline-block;
-	position: relative;
-	top: 40%;
-	text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 40%;
+  text-align: center;
 }
 
-.days {
-	font-size: 8vw;
-	color: mediumpurple;
-	stroke: mediumpurple;
-}
+$fields: (
+  years: (
+    color: chocolate,
+    size: 8vw,
+    stroke-width: 1.6%,
+  ),
+  days: (
+    color: mediumpurple,
+    size: 6vw,
+    stroke-width: 1.2%,
+  ),
+  hours: (
+    color: lawngreen,
+    size: 4vw,
+    stroke-width: 0.8%,
+  ),
+  minutes: (
+    color: gold,
+    size: 2vw,
+    stroke-width: 0.6%,
+  ),
+  seconds: (
+    color: silver,
+    size: initial,
+    stroke-width: 0.4%,
+  ),
+);
 
-.hours {
-	font-size: 6vw;
-	color: lawngreen;
-	stroke: lawngreen;
-}
-
-.minutes {
-	font-size: 4vw;
-	color: gold;
-	stroke: gold;
-}
-
-.seconds {
-	color: silver;
-	stroke: silver;
-}
-
-#days {
-	font-size: 8vw;
-}
-
-#hours {
-	font-size: 6vw;
-}
-
-#minutes {
-	font-size: 4vw;
+@each $field, $value in $fields {
+  .#{$field} {
+    font-size: map-get($value, "size");
+    color: map-get($value, "color");
+    stroke: map-get($value, "color");
+  }
+  ##{$field} {
+    font-size: map-get($value, "size");
+  }
+  svg circle.#{$field} {
+    stroke-width: map-get($value, "stroke-width");
+  }
 }
 
 svg {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	transform: rotateY(-180deg) rotateZ(-90deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg) rotateZ(-90deg);
 }
 
 svg circle {
-	/* stroke-linecap: round; */
-	fill: none;
-}
-
-svg circle.years {
-	stroke-width: 1.6%;
-}
-
-svg circle.days {
-	stroke-width: 1.2%;
-}
-
-svg circle.hours {
-	stroke-width: 0.8%;
-}
-
-svg circle.minutes {
-	stroke-width: 0.6%;
-}
-
-svg circle.seconds {
-	stroke-width: 0.4%;
+  /* stroke-linecap: round; */
+  fill: none;
 }
 
 @media screen and (max-device-aspect-ratio: 1/1) and (orientation: portrait) {
-	#main section {
-		width: auto;
-	}
+  #main section {
+    width: auto;
+  }
 }
 
 @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
-	#main section {
-		max-width: 60vw;
-	}
+  #main section {
+    max-width: 60vw;
+  }
 }
