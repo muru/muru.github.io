@@ -6,3 +6,7 @@ group :jekyll_plugins do
 	gem 'jekyll-paginate'
 	gem 'jekyll-sitemap'
 end
+
+install_if -> { RUBY_VERSION.split(".")[0].to_i > 2 } do
+  gem "webrick"
+end
