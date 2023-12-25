@@ -66,12 +66,13 @@ A CV template in LaTeX (modified from one obtained online), then re-written in M
 </div>
 
 I have followed the banding used by [@7amkickoff][7amkickoff].  This table will
-be updated during the season. The data is scraped from [the PL site][epl]
+be updated during the season. The data is scraped from [BBC][bbc]
 without any permission. Hopefully this will count as personal use. :)
 
 [cann-table]: https://www.sussex.ac.uk/Users/iane/cannyclubs.php
 [7amkickoff]: http://www.7amkickoff.com/2012/cann-tables-show-the-gap-between-arsenal-and-the-top-is-smaller-than-you-think/
 [epl]: http://www.premierleague.com/en-gb/matchday/league-table.html
+[bbc]: https://www.bbc.com/sport/football/tables
 
 [gitlab]: ../images/gitlab.png
 [github]: ../images/github.png
